@@ -1,0 +1,2591 @@
+{
+  "countries": [
+    "Greece",
+    "European Union",
+    "United States",
+    "General / Other",
+    "Austria",
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+    "Hungary",
+    "Ireland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Malta",
+    "Netherlands",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Sweden",
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
+    "District of Columbia"
+  ],
+  "country_labels": {
+    "Greece": {
+      "en": "Greece",
+      "el": "Ελλάδα"
+    },
+    "European Union": {
+      "en": "European Union",
+      "el": "Ευρωπαϊκή Ένωση"
+    },
+    "United States": {
+      "en": "United States",
+      "el": "Ηνωμένες Πολιτείες"
+    },
+    "General / Other": {
+      "en": "General / Other",
+      "el": "Γενικά / Άλλο"
+    },
+    "Austria": {
+      "en": "Austria",
+      "el": "Αυστρία"
+    },
+    "Belgium": {
+      "en": "Belgium",
+      "el": "Βέλγιο"
+    },
+    "Bulgaria": {
+      "en": "Bulgaria",
+      "el": "Βουλγαρία"
+    },
+    "Croatia": {
+      "en": "Croatia",
+      "el": "Κροατία"
+    },
+    "Cyprus": {
+      "en": "Cyprus",
+      "el": "Κύπρος"
+    },
+    "Czech Republic": {
+      "en": "Czech Republic",
+      "el": "Τσεχία"
+    },
+    "Denmark": {
+      "en": "Denmark",
+      "el": "Δανία"
+    },
+    "Estonia": {
+      "en": "Estonia",
+      "el": "Εσθονία"
+    },
+    "Finland": {
+      "en": "Finland",
+      "el": "Φινλανδία"
+    },
+    "France": {
+      "en": "France",
+      "el": "Γαλλία"
+    },
+    "Germany": {
+      "en": "Germany",
+      "el": "Γερμανία"
+    },
+    "Hungary": {
+      "en": "Hungary",
+      "el": "Ουγγαρία"
+    },
+    "Ireland": {
+      "en": "Ireland",
+      "el": "Ιρλανδία"
+    },
+    "Italy": {
+      "en": "Italy",
+      "el": "Ιταλία"
+    },
+    "Latvia": {
+      "en": "Latvia",
+      "el": "Λετονία"
+    },
+    "Lithuania": {
+      "en": "Lithuania",
+      "el": "Λιθουανία"
+    },
+    "Luxembourg": {
+      "en": "Luxembourg",
+      "el": "Λουξεμβούργο"
+    },
+    "Malta": {
+      "en": "Malta",
+      "el": "Μάλτα"
+    },
+    "Netherlands": {
+      "en": "Netherlands",
+      "el": "Ολλανδία"
+    },
+    "Poland": {
+      "en": "Poland",
+      "el": "Πολωνία"
+    },
+    "Portugal": {
+      "en": "Portugal",
+      "el": "Πορτογαλία"
+    },
+    "Romania": {
+      "en": "Romania",
+      "el": "Ρουμανία"
+    },
+    "Slovakia": {
+      "en": "Slovakia",
+      "el": "Σλοβακία"
+    },
+    "Slovenia": {
+      "en": "Slovenia",
+      "el": "Σλοβενία"
+    },
+    "Spain": {
+      "en": "Spain",
+      "el": "Ισπανία"
+    },
+    "Sweden": {
+      "en": "Sweden",
+      "el": "Σουηδία"
+    },
+    "Alabama": {
+      "en": "Alabama",
+      "el": "Αλαμπάμα"
+    },
+    "Alaska": {
+      "en": "Alaska",
+      "el": "Αλάσκα"
+    },
+    "Arizona": {
+      "en": "Arizona",
+      "el": "Αριζόνα"
+    },
+    "Arkansas": {
+      "en": "Arkansas",
+      "el": "Αρκάνσας"
+    },
+    "California": {
+      "en": "California",
+      "el": "Καλιφόρνια"
+    },
+    "Colorado": {
+      "en": "Colorado",
+      "el": "Κολοράντο"
+    },
+    "Connecticut": {
+      "en": "Connecticut",
+      "el": "Κονέκτικατ"
+    },
+    "Delaware": {
+      "en": "Delaware",
+      "el": "Ντελαγουέρ"
+    },
+    "Florida": {
+      "en": "Florida",
+      "el": "Φλόριντα"
+    },
+    "Georgia": {
+      "en": "Georgia",
+      "el": "Τζόρτζια"
+    },
+    "Hawaii": {
+      "en": "Hawaii",
+      "el": "Χαβάη"
+    },
+    "Idaho": {
+      "en": "Idaho",
+      "el": "Άινταχο"
+    },
+    "Illinois": {
+      "en": "Illinois",
+      "el": "Ιλινόις"
+    },
+    "Indiana": {
+      "en": "Indiana",
+      "el": "Ιντιάνα"
+    },
+    "Iowa": {
+      "en": "Iowa",
+      "el": "Άιοβα"
+    },
+    "Kansas": {
+      "en": "Kansas",
+      "el": "Κάνσας"
+    },
+    "Kentucky": {
+      "en": "Kentucky",
+      "el": "Κεντάκι"
+    },
+    "Louisiana": {
+      "en": "Louisiana",
+      "el": "Λουιζιάνα"
+    },
+    "Maine": {
+      "en": "Maine",
+      "el": "Μέιν"
+    },
+    "Maryland": {
+      "en": "Maryland",
+      "el": "Μέριλαντ"
+    },
+    "Massachusetts": {
+      "en": "Massachusetts",
+      "el": "Μασαχουσέτη"
+    },
+    "Michigan": {
+      "en": "Michigan",
+      "el": "Μίσιγκαν"
+    },
+    "Minnesota": {
+      "en": "Minnesota",
+      "el": "Μινεσότα"
+    },
+    "Mississippi": {
+      "en": "Mississippi",
+      "el": "Μισισίπι"
+    },
+    "Missouri": {
+      "en": "Missouri",
+      "el": "Μιζούρι"
+    },
+    "Montana": {
+      "en": "Montana",
+      "el": "Μοντάνα"
+    },
+    "Nebraska": {
+      "en": "Nebraska",
+      "el": "Νεμπράσκα"
+    },
+    "Nevada": {
+      "en": "Nevada",
+      "el": "Νεβάδα"
+    },
+    "New Hampshire": {
+      "en": "New Hampshire",
+      "el": "Νιού Χάμσαϊρ"
+    },
+    "New Jersey": {
+      "en": "New Jersey",
+      "el": "Νιού Τζέρσεϊ"
+    },
+    "New Mexico": {
+      "en": "New Mexico",
+      "el": "Νέο Μεξικό"
+    },
+    "New York": {
+      "en": "New York",
+      "el": "Νέα Υόρκη"
+    },
+    "North Carolina": {
+      "en": "North Carolina",
+      "el": "Βόρεια Καρολίνα"
+    },
+    "North Dakota": {
+      "en": "North Dakota",
+      "el": "Βόρεια Ντακότα"
+    },
+    "Ohio": {
+      "en": "Ohio",
+      "el": "Οχάιο"
+    },
+    "Oklahoma": {
+      "en": "Oklahoma",
+      "el": "Οκλαχόμα"
+    },
+    "Oregon": {
+      "en": "Oregon",
+      "el": "Όρεγκον"
+    },
+    "Pennsylvania": {
+      "en": "Pennsylvania",
+      "el": "Πενσιλβάνια"
+    },
+    "Rhode Island": {
+      "en": "Rhode Island",
+      "el": "Ρόουντ Άιλαντ"
+    },
+    "South Carolina": {
+      "en": "South Carolina",
+      "el": "Νότια Καρολίνα"
+    },
+    "South Dakota": {
+      "en": "South Dakota",
+      "el": "Νότια Ντακότα"
+    },
+    "Tennessee": {
+      "en": "Tennessee",
+      "el": "Τενεσί"
+    },
+    "Texas": {
+      "en": "Texas",
+      "el": "Τέξας"
+    },
+    "Utah": {
+      "en": "Utah",
+      "el": "Γιούτα"
+    },
+    "Vermont": {
+      "en": "Vermont",
+      "el": "Βερμόντ"
+    },
+    "Virginia": {
+      "en": "Virginia",
+      "el": "Βιρτζίνια"
+    },
+    "Washington": {
+      "en": "Washington",
+      "el": "Ουάσινγκτον (πολιτεία)"
+    },
+    "West Virginia": {
+      "en": "West Virginia",
+      "el": "Δυτική Βιρτζίνια"
+    },
+    "Wisconsin": {
+      "en": "Wisconsin",
+      "el": "Ουισκόνσιν"
+    },
+    "Wyoming": {
+      "en": "Wyoming",
+      "el": "Ουαϊόμινγκ"
+    },
+    "District of Columbia": {
+      "en": "District of Columbia",
+      "el": "Περιφέρεια της Κολούμπια"
+    }
+  },
+  "sectors": [
+    "Human Resources",
+    "Marketing & Sales",
+    "Software Development",
+    "Customer Support",
+    "Finance",
+    "Healthcare",
+    "Education",
+    "Arts & Creative Industries",
+    "Hospitality & Food Service",
+    "Public Sector",
+    "Legal Services",
+    "General / Other"
+  ],
+  "sector_labels": {
+    "Human Resources": {
+      "en": "Human Resources",
+      "el": "Ανθρώπινο Δυναμικό"
+    },
+    "Marketing & Sales": {
+      "en": "Marketing & Sales",
+      "el": "Μάρκετινγκ & Πωλήσεις"
+    },
+    "Software Development": {
+      "en": "Software Development",
+      "el": "Ανάπτυξη Λογισμικού"
+    },
+    "Customer Support": {
+      "en": "Customer Support",
+      "el": "Εξυπηρέτηση Πελατών"
+    },
+    "Finance": {
+      "en": "Finance",
+      "el": "Οικονομικά"
+    },
+    "Healthcare": {
+      "en": "Healthcare",
+      "el": "Υγεία"
+    },
+    "Education": {
+      "en": "Education",
+      "el": "Εκπαίδευση"
+    },
+    "General / Other": {
+      "en": "General / Other",
+      "el": "Γενικά / Άλλο"
+    },
+    "Arts & Creative Industries": {
+      "en": "Arts & Creative Industries",
+      "el": "Τέχνες & Δημιουργικές Βιομηχανίες"
+    },
+    "Hospitality & Food Service": {
+      "en": "Hospitality & Food Service",
+      "el": "Εστίαση & Φιλοξενία"
+    },
+    "Public Sector": {
+      "en": "Public Sector",
+      "el": "Δημόσιος Τομέας"
+    },
+    "Legal Services": {
+      "en": "Legal Services",
+      "el": "Νομικές Υπηρεσίες"
+    }
+  },
+  "categories": {
+    "transparency": {
+      "label": {
+        "en": "Transparency",
+        "el": "Διαφάνεια"
+      },
+      "description": {
+        "en": "Whether people affected by the AI system can understand how and why it produced a given output or decision.",
+        "el": "Κατά πόσο τα άτομα που επηρεάζονται από το σύστημα ΑΙ μπορούν να κατανοήσουν πώς και γιατί παρήγαγε ένα συγκεκριμένο αποτέλεσμα ή απόφαση."
+      }
+    },
+    "fairness": {
+      "label": {
+        "en": "Fairness & Non-discrimination",
+        "el": "Δικαιοσύνη & Μη Διάκριση"
+      },
+      "description": {
+        "en": "Whether the system treats individuals and groups equitably and avoids biased or discriminatory outcomes.",
+        "el": "Κατά πόσο το σύστημα αντιμετωπίζει δίκαια άτομα και ομάδες και αποφεύγει μεροληπτικά ή διακριτικά αποτελέσματα."
+      }
+    },
+    "non_maleficence": {
+      "label": {
+        "en": "Non-maleficence & Safety",
+        "el": "Αποφυγή Βλάβης & Ασφάλεια"
+      },
+      "description": {
+        "en": "Whether the use of the system could cause harm, physical, psychological, financial or reputational, to people or the organisation.",
+        "el": "Κατά πόσο η χρήση του συστήματος θα μπορούσε να προκαλέσει βλάβη, σωματική, ψυχολογική, οικονομική ή στη φήμη, σε ανθρώπους ή στον οργανισμό."
+      }
+    },
+    "accountability": {
+      "label": {
+        "en": "Accountability & Governance",
+        "el": "Λογοδοσία & Διακυβέρνηση"
+      },
+      "description": {
+        "en": "Whether there is a clear, traceable chain of human responsibility for decisions the system informs or makes.",
+        "el": "Κατά πόσο υπάρχει σαφής, ιχνηλάσιμη αλυσίδα ανθρώπινης ευθύνης για τις αποφάσεις που το σύστημα διαμορφώνει ή λαμβάνει."
+      }
+    },
+    "privacy": {
+      "label": {
+        "en": "Privacy & Data Protection",
+        "el": "Ιδιωτικότητα & Προστασία Δεδομένων"
+      },
+      "description": {
+        "en": "Whether personal or confidential data is collected, stored, or processed by the system in a lawful and proportionate way.",
+        "el": "Κατά πόσο τα προσωπικά ή εμπιστευτικά δεδομένα συλλέγονται, αποθηκεύονται ή υφίστανται επεξεργασία από το σύστημα με νόμιμο και αναλογικό τρόπο."
+      }
+    }
+  },
+  "entries": [
+    {
+      "id": "p-trans-1",
+      "category": "transparency",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "People affected by an AI-assisted decision should be able to get a plain-language explanation of the main factors behind it, not just the final output.",
+        "el": "Τα άτομα που επηρεάζονται από μια απόφαση με τη βοήθεια ΑΙ θα πρέπει να μπορούν να λαμβάνουν μια εξήγηση σε απλή γλώσσα για τους βασικούς παράγοντες πίσω από αυτήν, όχι μόνο για το τελικό αποτέλεσμα."
+      },
+      "source": "Floridi et al., AI4People (explicability)"
+    },
+    {
+      "id": "p-trans-2",
+      "category": "transparency",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Disclose to users and colleagues when content, analysis or a decision has been produced or materially assisted by an AI system.",
+        "el": "Να γνωστοποιείται σε χρήστες και συναδέλφους όταν περιεχόμενο, ανάλυση ή απόφαση έχει παραχθεί ή έχει υποβοηθηθεί ουσιωδώς από σύστημα ΑΙ."
+      },
+      "source": "Jobin, Ienca & Vayena (transparency)"
+    },
+    {
+      "id": "r-trans-eu-1",
+      "category": "transparency",
+      "country": "European Union",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The EU AI Act imposes transparency obligations on providers and deployers of certain AI systems, including informing individuals that they are interacting with an AI system.",
+        "el": "Ο Κανονισμός της ΕΕ για την Τεχνητή Νοημοσύνη (AI Act) επιβάλλει υποχρεώσεις διαφάνειας σε παρόχους και φορείς εφαρμογής ορισμένων συστημάτων ΑΙ, συμπεριλαμβανομένης της ενημέρωσης των ατόμων ότι αλληλεπιδρούν με σύστημα ΑΙ."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 50",
+        "el": "Άρθρο 50"
+      },
+      "url": "https://artificialintelligenceact.eu/article/50/",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024"
+    },
+    {
+      "id": "r-trans-gr-1",
+      "category": "transparency",
+      "country": "Greece",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Greece applies the EU AI Act's transparency obligations directly, and Law 5321/2026 designates the Hellenic Data Protection Authority as the market surveillance authority for systems subject to Art. 50. Removing or altering the transparency markings of deepfake content is a criminal offence under the Greek law.",
+        "el": "Η Ελλάδα εφαρμόζει απευθείας τις υποχρεώσεις διαφάνειας του AI Act, και ο Ν. 5321/2026 ορίζει την Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα ως αρχή εποπτείας της αγοράς για τα συστήματα του Άρθρου 50. Η αφαίρεση ή αλλοίωση των σημάνσεων διαφάνειας σε περιεχόμενο βαθυπαραποίησης (deepfakes) αποτελεί ποινικό αδίκημα κατά τον ελληνικό νόμο."
+      },
+      "source": "EU AI Act, national implementation (Law 5321/2026)",
+      "article": {
+        "en": "Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Art. 3 (market surveillance authorities), Art. 23 (deepfake transparency markings); Reg. (EU) 2024/1689, Art. 50",
+        "el": "Ν. 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Άρθρο 3 (αρχές εποπτείας της αγοράς), Άρθρο 23 (σημάνσεις διαφάνειας deepfakes)· Κανονισμός (ΕΕ) 2024/1689, Άρθρο 50"
+      },
+      "url": "https://www.taxheaven.gr/law/5321/2026",
+      "citation": "Greek Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), implementing measures for Regulation (EU) 2024/1689 (AI Act), Art. 3, Art. 23"
+    },
+    {
+      "id": "r-trans-us-1",
+      "category": "transparency",
+      "country": "United States",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "There is no single federal AI transparency law; obligations vary by state (e.g. automated decision disclosure rules) and by sector-specific regulators.",
+        "el": "Δεν υπάρχει ενιαίος ομοσπονδιακός νόμος για τη διαφάνεια στην ΑΙ· οι υποχρεώσεις διαφέρουν ανά πολιτεία (π.χ. κανόνες γνωστοποίησης αυτοματοποιημένων αποφάσεων) και ανά κλαδική ρυθμιστική αρχή."
+      },
+      "source": "US state-level AI disclosure statutes",
+      "article": {
+        "en": "e.g. Cal. Bus. & Prof. Code § 17941 (SB 1001)",
+        "el": "π.χ. Cal. Bus. & Prof. Code § 17941 (SB 1001)"
+      },
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180SB1001",
+      "citation": "Illustrative example only — California's Bolstering Online Transparency (\"B.O.T.\") Act; other states differ"
+    },
+    {
+      "id": "a-trans-hr-1",
+      "category": "transparency",
+      "sector": "Human Resources",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "If AI is used to screen or rank candidates, tell applicants and keep a record of the criteria the model weighed most heavily.",
+        "el": "Εάν χρησιμοποιείται ΑΙ για την αξιολόγηση ή κατάταξη υποψηφίων, ενημερώστε τους υποψηφίους και κρατήστε αρχείο των κριτηρίων που βάρυναν περισσότερο στο μοντέλο."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-trans-mkt-1",
+      "category": "transparency",
+      "sector": "Marketing & Sales",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Label AI-generated marketing copy, images or personalised offers internally so reviewers know what was machine-produced before publication.",
+        "el": "Επισημάνετε εσωτερικά τα κείμενα μάρκετινγκ, τις εικόνες ή τις εξατομικευμένες προσφορές που παράγονται από ΑΙ, ώστε οι υπεύθυνοι έγκρισης να γνωρίζουν τι είναι μηχανικά παραγόμενο πριν τη δημοσίευση."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-trans-dev-1",
+      "category": "transparency",
+      "sector": "Software Development",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Log model version, prompt template and key parameters for every production inference so outputs can be reconstructed and explained later.",
+        "el": "Καταγράψτε την έκδοση του μοντέλου, το πρότυπο εντολών (prompt) και τις βασικές παραμέτρους για κάθε παραγωγική εκτέλεση, ώστε τα αποτελέσματα να μπορούν να ανασυσταθούν και να εξηγηθούν αργότερα."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "p-fair-1",
+      "category": "fairness",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "An AI system should be checked for outcomes that systematically disadvantage a protected group, even when no single input variable names that group directly.",
+        "el": "Ένα σύστημα ΑΙ θα πρέπει να ελέγχεται για αποτελέσματα που συστηματικά μειονεκτούν μια προστατευόμενη ομάδα, ακόμη κι όταν καμία μεμονωμένη μεταβλητή εισόδου δεν κατονομάζει άμεσα αυτή την ομάδα."
+      },
+      "source": "Jobin, Ienca & Vayena (justice/fairness)"
+    },
+    {
+      "id": "p-fair-2",
+      "category": "fairness",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Fairness is not a single fixed metric; the organisation should state explicitly which notion of fairness (equal treatment, equal outcome, etc.) it is optimising for and why.",
+        "el": "Η δικαιοσύνη δεν είναι ένας ενιαίος, σταθερός δείκτης· ο οργανισμός θα πρέπει να δηλώνει ρητά ποια αντίληψη δικαιοσύνης (ίση μεταχείριση, ίσο αποτέλεσμα κ.λπ.) επιδιώκει και για ποιο λόγο."
+      },
+      "source": "Whittlestone et al., tensions in AI ethics"
+    },
+    {
+      "id": "r-fair-eu-1",
+      "category": "fairness",
+      "country": "European Union",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "High-risk AI systems under the EU AI Act must undergo bias testing on training, validation and testing datasets before and during deployment.",
+        "el": "Τα συστήματα ΑΙ υψηλού κινδύνου βάσει του AI Act πρέπει να υποβάλλονται σε έλεγχο μεροληψίας στα σύνολα δεδομένων εκπαίδευσης, επικύρωσης και δοκιμών, πριν και κατά τη διάρκεια της χρήσης τους."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 10",
+        "el": "Άρθρο 10"
+      },
+      "url": "https://artificialintelligenceact.eu/article/10/",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Art. 10 (Data and data governance)"
+    },
+    {
+      "id": "r-fair-us-1",
+      "category": "fairness",
+      "country": "United States",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Use of AI in employment or lending decisions can trigger existing anti-discrimination law (e.g. Title VII, ECOA) regardless of AI-specific rules.",
+        "el": "Η χρήση ΑΙ σε αποφάσεις πρόσληψης ή δανειοδότησης μπορεί να ενεργοποιήσει την υφιστάμενη νομοθεσία κατά των διακρίσεων (π.χ. Title VII, ECOA), ανεξάρτητα από ειδικούς κανόνες για την ΑΙ."
+      },
+      "source": "US anti-discrimination statutes",
+      "article": {
+        "en": "Title VII, 42 U.S.C. §2000e; ECOA, 15 U.S.C. §1691",
+        "el": "Title VII, 42 U.S.C. §2000e· ECOA, 15 U.S.C. §1691"
+      },
+      "url": "https://www.eeoc.gov/statutes/title-vii-civil-rights-act-1964",
+      "citation": "Title VII of the Civil Rights Act of 1964; Equal Credit Opportunity Act (ECOA)"
+    },
+    {
+      "id": "a-fair-hr-1",
+      "category": "fairness",
+      "sector": "Human Resources",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Run a disparate-impact check across gender, age and ethnicity proxies before an AI hiring or promotion tool goes live, and repeat it periodically.",
+        "el": "Πραγματοποιήστε έλεγχο δυσανάλογου αντικτύπου ως προς φύλο, ηλικία και εθνοτική προέλευση πριν τεθεί σε λειτουργία εργαλείο ΑΙ για προσλήψεις ή προαγωγές, και επαναλάβετέ τον περιοδικά."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-fair-fin-1",
+      "category": "fairness",
+      "sector": "Finance",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Document the features used in an AI credit-scoring or pricing model and test whether any act as proxies for protected characteristics.",
+        "el": "Καταγράψτε τα χαρακτηριστικά που χρησιμοποιούνται σε ένα μοντέλο ΑΙ πιστοληπτικής αξιολόγησης ή τιμολόγησης και ελέγξτε αν κάποιο λειτουργεί ως υποκατάστατο προστατευόμενου χαρακτηριστικού."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "p-harm-1",
+      "category": "non_maleficence",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Before deployment, map the realistic worst-case misuse or failure of the system, not only its intended use case.",
+        "el": "Πριν τη διάθεση σε λειτουργία, χαρτογραφήστε το ρεαλιστικό χειρότερο σενάριο κακής χρήσης ή αστοχίας του συστήματος, όχι μόνο την προβλεπόμενη χρήση του."
+      },
+      "source": "Floridi et al., AI4People (non-maleficence)"
+    },
+    {
+      "id": "p-harm-2",
+      "category": "non_maleficence",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "A human should be able to override or stop an AI-driven process when it is producing harmful or clearly wrong results.",
+        "el": "Ένας άνθρωπος θα πρέπει να μπορεί να παρακάμψει ή να σταματήσει μια διαδικασία που καθοδηγείται από ΑΙ όταν παράγει βλαβερά ή προφανώς λανθασμένα αποτελέσματα."
+      },
+      "source": "Human oversight principle, common to major AI ethics frameworks"
+    },
+    {
+      "id": "r-harm-eu-1",
+      "category": "non_maleficence",
+      "country": "European Union",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The EU AI Act bans certain uses outright (e.g. manipulative or exploitative AI, some biometric categorisation) and imposes risk management duties on high-risk systems.",
+        "el": "Ο AI Act απαγορεύει ρητά ορισμένες χρήσεις (π.χ. χειραγωγική ή εκμεταλλευτική ΑΙ, ορισμένες μορφές βιομετρικής κατηγοριοποίησης) και επιβάλλει υποχρεώσεις διαχείρισης κινδύνου σε συστήματα υψηλού κινδύνου."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 5 (prohibited practices) & Art. 9 (risk management)",
+        "el": "Άρθρο 5 (απαγορευμένες πρακτικές) & Άρθρο 9 (διαχείριση κινδύνου)"
+      },
+      "url": "https://artificialintelligenceact.eu/article/5/",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Art. 5 & Art. 9"
+    },
+    {
+      "id": "a-harm-support-1",
+      "category": "non_maleficence",
+      "sector": "Customer Support",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Give customers a fast, visible path to a human agent whenever the AI assistant is uncertain, the topic is sensitive, or the customer asks for one.",
+        "el": "Παρέχετε στους πελάτες γρήγορη, εμφανή δίοδο προς ανθρώπινο εκπρόσωπο όποτε ο βοηθός ΑΙ δεν είναι σίγουρος, το θέμα είναι ευαίσθητο, ή ο πελάτης το ζητήσει."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-harm-health-1",
+      "category": "non_maleficence",
+      "sector": "Healthcare",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Treat AI-generated clinical suggestions as decision support only; require a qualified professional to review and sign off before any action is taken on a patient.",
+        "el": "Αντιμετωπίστε τις κλινικές προτάσεις που παράγονται από ΑΙ αποκλειστικά ως υποστήριξη απόφασης· απαιτήστε την επισκόπηση και έγκριση από αρμόδιο επαγγελματία πριν από οποιαδήποτε ενέργεια σε ασθενή."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-harm-dev-1",
+      "category": "non_maleficence",
+      "sector": "Software Development",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Add rate limits, content filters and abuse-monitoring before exposing a generative AI feature to the public internet.",
+        "el": "Προσθέστε όρια ρυθμού αιτημάτων, φίλτρα περιεχομένου και παρακολούθηση κατάχρησης πριν εκθέσετε μια λειτουργία γενετικής ΑΙ στο ανοιχτό διαδίκτυο."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "p-acc-1",
+      "category": "accountability",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Every AI-assisted decision that affects a person or the company should have a named human owner who can be asked to justify it.",
+        "el": "Κάθε απόφαση με τη βοήθεια ΑΙ που επηρεάζει ένα άτομο ή την εταιρεία θα πρέπει να έχει έναν κατονομαζόμενο υπεύθυνο άνθρωπο, ο οποίος μπορεί να κληθεί να την αιτιολογήσει."
+      },
+      "source": "Morley et al., Ethics as a Service"
+    },
+    {
+      "id": "p-acc-2",
+      "category": "accountability",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Keep records of why the AI tool was selected, what it was tested for, and who approved it, so the decision can be audited later.",
+        "el": "Τηρήστε αρχεία σχετικά με το γιατί επιλέχθηκε το εργαλείο ΑΙ, τι ελέγχθηκε και ποιος το ενέκρινε, ώστε η απόφαση να μπορεί να ελεγχθεί αργότερα."
+      },
+      "source": "Ayling & Chapman, AI ethics tools review"
+    },
+    {
+      "id": "r-acc-eu-1",
+      "category": "accountability",
+      "country": "European Union",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Providers and deployers of high-risk AI systems under the EU AI Act must maintain technical documentation and a risk-management system, and register certain systems in an EU database.",
+        "el": "Πάροχοι και φορείς εφαρμογής συστημάτων ΑΙ υψηλού κινδύνου βάσει του AI Act πρέπει να τηρούν τεχνική τεκμηρίωση και σύστημα διαχείρισης κινδύνου, και να καταχωρίζουν ορισμένα συστήματα σε ενωσιακή βάση δεδομένων."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 9, 11 & 71",
+        "el": "Άρθρο 9, 11 & 71"
+      },
+      "url": "https://artificialintelligenceact.eu/high-level-summary/",
+      "citation": "Regulation (EU) 2024/1689, Art. 9 (risk management), Art. 11 (technical documentation), Art. 71 (EU database)"
+    },
+    {
+      "id": "r-acc-gr-1",
+      "category": "accountability",
+      "country": "Greece",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Law 5321/2026 sets out how the AI Act is enforced in Greece, including administrative sanctions for breaches, and creates a registry of AI systems used by public sector bodies. Organisations should align their AI governance documentation with it, alongside existing Greek corporate governance and consumer protection rules.",
+        "el": "Ο Ν. 5321/2026 ορίζει τον τρόπο επιβολής του AI Act στην Ελλάδα, συμπεριλαμβανομένων διοικητικών κυρώσεων για παραβάσεις, και δημιουργεί μητρώο των συστημάτων ΤΝ που χρησιμοποιούν φορείς του δημόσιου τομέα. Οι οργανισμοί θα πρέπει να ευθυγραμμίζουν την τεκμηρίωση διακυβέρνησης ΤΝ με αυτόν, παράλληλα με τους υφιστάμενους ελληνικούς κανόνες εταιρικής διακυβέρνησης και προστασίας καταναλωτή."
+      },
+      "source": "EU AI Act, national implementation (Law 5321/2026)",
+      "article": {
+        "en": "Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Art. 16 (administrative sanctions), Art. 21 (registry of AI systems)",
+        "el": "Ν. 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Άρθρο 16 (διοικητικές κυρώσεις), Άρθρο 21 (μητρώο συστημάτων ΤΝ)"
+      },
+      "url": "https://www.taxheaven.gr/law/5321/2026",
+      "citation": "Greek Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), implementing measures for Regulation (EU) 2024/1689 (AI Act), Art. 16, Art. 21"
+    },
+    {
+      "id": "a-acc-legal-1",
+      "category": "accountability",
+      "sector": "General / Other",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Set up a lightweight AI use-case register: what the tool does, who owns it, what data it touches, and when it was last reviewed.",
+        "el": "Δημιουργήστε ένα απλό μητρώο περιπτώσεων χρήσης ΑΙ: τι κάνει το εργαλείο, ποιος είναι υπεύθυνος, ποια δεδομένα αγγίζει και πότε επανεξετάστηκε τελευταία φορά."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-acc-mkt-1",
+      "category": "accountability",
+      "sector": "Marketing & Sales",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Assign a named reviewer who signs off on AI-generated claims about the product before they reach customers, especially factual or comparative claims.",
+        "el": "Ορίστε έναν συγκεκριμένο υπεύθυνο έγκρισης για ισχυρισμούς σχετικά με το προϊόν που παράγονται από ΑΙ πριν φτάσουν στους πελάτες, ιδίως πραγματολογικούς ή συγκριτικούς ισχυρισμούς."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "p-priv-1",
+      "category": "privacy",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Only send the minimum data necessary to an AI tool to accomplish the task; avoid pasting full records when a summary or anonymised extract would do.",
+        "el": "Στείλτε σε ένα εργαλείο ΑΙ μόνο τα ελάχιστα απαραίτητα δεδομένα για την ολοκλήρωση της εργασίας· αποφύγετε την επικόλληση πλήρων αρχείων όταν αρκεί μια σύνοψη ή ανωνυμοποιημένο απόσπασμα."
+      },
+      "source": "Data minimisation principle"
+    },
+    {
+      "id": "p-priv-2",
+      "category": "privacy",
+      "country": "General / Other",
+      "sector": "General / Other",
+      "type": "principle",
+      "text": {
+        "en": "Check whether the AI provider retains or trains on submitted data, and whether that is acceptable for confidential or personal information.",
+        "el": "Ελέγξτε αν ο πάροχος ΑΙ διατηρεί ή εκπαιδεύει το μοντέλο του πάνω στα δεδομένα που υποβάλλονται, και αν αυτό είναι αποδεκτό για εμπιστευτικές ή προσωπικές πληροφορίες."
+      },
+      "source": "Jobin, Ienca & Vayena (privacy)"
+    },
+    {
+      "id": "r-priv-eu-1",
+      "category": "privacy",
+      "country": "European Union",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR applies whenever personal data is processed by or through an AI tool, including a lawful basis, purpose limitation and, for significant automated decisions, a right to human review.",
+        "el": "Ο ΓΚΠΔ εφαρμόζεται όποτε προσωπικά δεδομένα υφίστανται επεξεργασία από ή μέσω εργαλείου ΑΙ, συμπεριλαμβανομένης της νόμιμης βάσης, του περιορισμού σκοπού και, για σημαντικές αυτοματοποιημένες αποφάσεις, του δικαιώματος ανθρώπινης επανεξέτασης."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 22 (automated decision-making); Art. 5 & 6 (lawful basis)",
+        "el": "Άρθρο 22 (αυτοματοποιημένη λήψη αποφάσεων)· Άρθρο 5 & 6 (νόμιμη βάση)"
+      },
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679",
+      "citation": "Regulation (EU) 2016/679 (GDPR), Art. 22, Art. 5, Art. 6"
+    },
+    {
+      "id": "r-priv-gr-1",
+      "category": "privacy",
+      "country": "Greece",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "In Greece, GDPR is enforced by the Hellenic Data Protection Authority (ΑΠΔΠΧ), which has issued specific guidance on AI and automated processing.",
+        "el": "Στην Ελλάδα, ο ΓΚΠΔ επιβάλλεται από την Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (ΑΠΔΠΧ), η οποία έχει εκδώσει ειδικές κατευθυντήριες οδηγίες για την ΑΙ και την αυτοματοποιημένη επεξεργασία."
+      },
+      "source": "Hellenic Data Protection Authority",
+      "article": {
+        "en": "Law 4624/2019 (ΦΕΚ Α' 137/29-08-2019), as codified by Law 5221/2025",
+        "el": "Ν. 4624/2019 (ΦΕΚ Α' 137/29-08-2019), όπως κωδικοποιήθηκε με τον Ν. 5221/2025"
+      },
+      "url": "https://www.taxheaven.gr/law/4624/2019",
+      "citation": "Greek Law 4624/2019 implementing the GDPR and Directive (EU) 2016/680"
+    },
+    {
+      "id": "r-harm-gr-1",
+      "category": "non_maleficence",
+      "country": "Greece",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "In Greece, the Hellenic Data Protection Authority supervises prohibited AI practices and Annex III high-risk AI systems under Law 5321/2026, and runs the national AI regulatory sandbox together with the Hellenic Telecommunications and Post Commission (EETT), which is the notifying authority for conformity assessment bodies.",
+        "el": "Στην Ελλάδα, η Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα εποπτεύει τις απαγορευμένες πρακτικές ΤΝ και τα συστήματα υψηλού κινδύνου του Παραρτήματος III βάσει του Ν. 5321/2026, και λειτουργεί το εθνικό ρυθμιστικό δοκιμαστήριο ΤΝ μαζί με την Εθνική Επιτροπή Τηλεπικοινωνιών και Ταχυδρομείων (ΕΕΤΤ), η οποία είναι η κοινοποιούσα αρχή για τους οργανισμούς αξιολόγησης της συμμόρφωσης."
+      },
+      "source": "EU AI Act, national implementation (Law 5321/2026)",
+      "article": {
+        "en": "Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Art. 3 (market surveillance authorities), Art. 5 (notifying authority), Art. 12 (AI regulatory sandbox)",
+        "el": "Ν. 5321/2026 (ΦΕΚ Α' 114/20.07.2026), Άρθρο 3 (αρχές εποπτείας της αγοράς), Άρθρο 5 (κοινοποιούσα αρχή), Άρθρο 12 (ρυθμιστικό δοκιμαστήριο ΤΝ)"
+      },
+      "url": "https://www.taxheaven.gr/law/5321/2026",
+      "citation": "Greek Law 5321/2026 (ΦΕΚ Α' 114/20.07.2026), implementing measures for Regulation (EU) 2024/1689 (AI Act), Art. 3, Art. 5, Art. 12"
+    },
+    {
+      "id": "a-priv-support-1",
+      "category": "privacy",
+      "sector": "Customer Support",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Mask or redact customer identifiers before pasting a support ticket into a general-purpose AI tool for drafting a reply.",
+        "el": "Αποκρύψτε ή αφαιρέστε τα αναγνωριστικά στοιχεία του πελάτη πριν επικολλήσετε ένα αίτημα υποστήριξης σε εργαλείο ΑΙ γενικής χρήσης για τη σύνταξη απάντησης."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-priv-dev-1",
+      "category": "privacy",
+      "sector": "Software Development",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Route calls to external AI APIs through a proxy that strips or tokenises personal data fields before the request leaves your infrastructure.",
+        "el": "Δρομολογήστε τις κλήσεις προς εξωτερικά APIs ΑΙ μέσω ενδιάμεσου διακομιστή (proxy) που αφαιρεί ή διακριτοποιεί τα πεδία προσωπικών δεδομένων πριν το αίτημα εγκαταλείψει την υποδομή σας."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-priv-fin-1",
+      "category": "privacy",
+      "sector": "Finance",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Confirm with legal/compliance whether client financial data may be processed by a third-party AI tool under existing confidentiality and outsourcing agreements.",
+        "el": "Επιβεβαιώστε με το νομικό/κανονιστικό τμήμα αν επιτρέπεται η επεξεργασία οικονομικών δεδομένων πελατών από εργαλείο ΑΙ τρίτου μέρους, βάσει των υφιστάμενων συμφωνιών εμπιστευτικότητας και ανάθεσης."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "r-priv-eu-austria",
+      "category": "privacy",
+      "country": "Austria",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Austria and is enforced nationally by the Österreichische Datenschutzbehörde, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Αυστρία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Österreichische Datenschutzbehörde, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Österreichische Datenschutzbehörde",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.dsb.gv.at/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Österreichische Datenschutzbehörde"
+    },
+    {
+      "id": "r-priv-eu-belgium",
+      "category": "privacy",
+      "country": "Belgium",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Belgium and is enforced nationally by the Autorité de la protection des données (APD-GBA), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Βέλγιο και επιβάλλεται σε εθνικό επίπεδο από την αρχή Autorité de la protection des données (APD-GBA), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Autorité de la protection des données (APD-GBA)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.autoriteprotectiondonnees.be",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Autorité de la protection des données (APD-GBA)"
+    },
+    {
+      "id": "r-priv-eu-bulgaria",
+      "category": "privacy",
+      "country": "Bulgaria",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Bulgaria and is enforced nationally by the Commission for Personal Data Protection, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Βουλγαρία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Commission for Personal Data Protection, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Commission for Personal Data Protection",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.cpdp.bg/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Commission for Personal Data Protection"
+    },
+    {
+      "id": "r-priv-eu-croatia",
+      "category": "privacy",
+      "country": "Croatia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Croatia and is enforced nationally by the Agencija za zaštitu osobnih podataka (AZOP), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Κροατία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Agencija za zaštitu osobnih podataka (AZOP), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Agencija za zaštitu osobnih podataka (AZOP)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.azop.hr/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Agencija za zaštitu osobnih podataka (AZOP)"
+    },
+    {
+      "id": "r-priv-eu-cyprus",
+      "category": "privacy",
+      "country": "Cyprus",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Cyprus and is enforced nationally by the Office of the Commissioner for Personal Data Protection, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Κύπρος και επιβάλλεται σε εθνικό επίπεδο από την αρχή Office of the Commissioner for Personal Data Protection, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Office of the Commissioner for Personal Data Protection",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.dataprotection.gov.cy/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Office of the Commissioner for Personal Data Protection"
+    },
+    {
+      "id": "r-priv-eu-czech-republic",
+      "category": "privacy",
+      "country": "Czech Republic",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Czech Republic and is enforced nationally by the Office for Personal Data Protection (Úřad pro ochranu osobních údajů), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Τσεχία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Office for Personal Data Protection (Úřad pro ochranu osobních údajů), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Office for Personal Data Protection (Úřad pro ochranu osobních údajů)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://uoou.gov.cz/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Office for Personal Data Protection (Úřad pro ochranu osobních údajů)"
+    },
+    {
+      "id": "r-priv-eu-denmark",
+      "category": "privacy",
+      "country": "Denmark",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Denmark and is enforced nationally by the Datatilsynet, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Δανία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Datatilsynet, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Datatilsynet",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.datatilsynet.dk/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Datatilsynet"
+    },
+    {
+      "id": "r-priv-eu-estonia",
+      "category": "privacy",
+      "country": "Estonia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Estonia and is enforced nationally by the Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Εσθονία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.aki.ee/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon)"
+    },
+    {
+      "id": "r-priv-eu-finland",
+      "category": "privacy",
+      "country": "Finland",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Finland and is enforced nationally by the Office of the Data Protection Ombudsman, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Φινλανδία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Office of the Data Protection Ombudsman, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Office of the Data Protection Ombudsman",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.tietosuoja.fi/en/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Office of the Data Protection Ombudsman"
+    },
+    {
+      "id": "r-priv-eu-france",
+      "category": "privacy",
+      "country": "France",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in France and is enforced nationally by the Commission Nationale de l'Informatique et des Libertés (CNIL), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Γαλλία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Commission Nationale de l'Informatique et des Libertés (CNIL), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Commission Nationale de l'Informatique et des Libertés (CNIL)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.cnil.fr/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Commission Nationale de l'Informatique et des Libertés (CNIL)"
+    },
+    {
+      "id": "r-priv-eu-germany",
+      "category": "privacy",
+      "country": "Germany",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Germany and is enforced nationally by the Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Γερμανία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.bfdi.bund.de/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)"
+    },
+    {
+      "id": "r-priv-eu-hungary",
+      "category": "privacy",
+      "country": "Hungary",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Hungary and is enforced nationally by the Hungarian National Authority for Data Protection and Freedom of Information (NAIH), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ουγγαρία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Hungarian National Authority for Data Protection and Freedom of Information (NAIH), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Hungarian National Authority for Data Protection and Freedom of Information (NAIH)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.naih.hu/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Hungarian National Authority for Data Protection and Freedom of Information (NAIH)"
+    },
+    {
+      "id": "r-priv-eu-ireland",
+      "category": "privacy",
+      "country": "Ireland",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Ireland and is enforced nationally by the Data Protection Commission (DPC), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ιρλανδία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Data Protection Commission (DPC), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Data Protection Commission (DPC)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.dataprotection.ie/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Data Protection Commission (DPC)"
+    },
+    {
+      "id": "r-priv-eu-italy",
+      "category": "privacy",
+      "country": "Italy",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Italy and is enforced nationally by the Garante per la protezione dei dati personali, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ιταλία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Garante per la protezione dei dati personali, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Garante per la protezione dei dati personali",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.garanteprivacy.it/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Garante per la protezione dei dati personali"
+    },
+    {
+      "id": "r-priv-eu-latvia",
+      "category": "privacy",
+      "country": "Latvia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Latvia and is enforced nationally by the Data State Inspectorate, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Λετονία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Data State Inspectorate, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Data State Inspectorate",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.dvi.gov.lv/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Data State Inspectorate"
+    },
+    {
+      "id": "r-priv-eu-lithuania",
+      "category": "privacy",
+      "country": "Lithuania",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Lithuania and is enforced nationally by the State Data Protection Inspectorate, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Λιθουανία και επιβάλλεται σε εθνικό επίπεδο από την αρχή State Data Protection Inspectorate, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "State Data Protection Inspectorate",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://vdai.lrv.lt/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: State Data Protection Inspectorate"
+    },
+    {
+      "id": "r-priv-eu-luxembourg",
+      "category": "privacy",
+      "country": "Luxembourg",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Luxembourg and is enforced nationally by the Commission Nationale pour la Protection des Données (CNPD), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Λουξεμβούργο και επιβάλλεται σε εθνικό επίπεδο από την αρχή Commission Nationale pour la Protection des Données (CNPD), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Commission Nationale pour la Protection des Données (CNPD)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.cnpd.lu/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Commission Nationale pour la Protection des Données (CNPD)"
+    },
+    {
+      "id": "r-priv-eu-malta",
+      "category": "privacy",
+      "country": "Malta",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Malta and is enforced nationally by the Office of the Information and Data Protection Commissioner (IDPC), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Μάλτα και επιβάλλεται σε εθνικό επίπεδο από την αρχή Office of the Information and Data Protection Commissioner (IDPC), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Office of the Information and Data Protection Commissioner (IDPC)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.idpc.org.mt/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Office of the Information and Data Protection Commissioner (IDPC)"
+    },
+    {
+      "id": "r-priv-eu-netherlands",
+      "category": "privacy",
+      "country": "Netherlands",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Netherlands and is enforced nationally by the Autoriteit Persoonsgegevens, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ολλανδία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Autoriteit Persoonsgegevens, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Autoriteit Persoonsgegevens",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://autoriteitpersoonsgegevens.nl/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Autoriteit Persoonsgegevens"
+    },
+    {
+      "id": "r-priv-eu-poland",
+      "category": "privacy",
+      "country": "Poland",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Poland and is enforced nationally by the Urząd Ochrony Danych Osobowych (UODO), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Πολωνία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Urząd Ochrony Danych Osobowych (UODO), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Urząd Ochrony Danych Osobowych (UODO)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://uodo.gov.pl/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Urząd Ochrony Danych Osobowych (UODO)"
+    },
+    {
+      "id": "r-priv-eu-portugal",
+      "category": "privacy",
+      "country": "Portugal",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Portugal and is enforced nationally by the Comissão Nacional de Proteção de Dados (CNPD), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Πορτογαλία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Comissão Nacional de Proteção de Dados (CNPD), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Comissão Nacional de Proteção de Dados (CNPD)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.cnpd.pt/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Comissão Nacional de Proteção de Dados (CNPD)"
+    },
+    {
+      "id": "r-priv-eu-romania",
+      "category": "privacy",
+      "country": "Romania",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Romania and is enforced nationally by the National Supervisory Authority for Personal Data Processing (ANSPDCP), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ρουμανία και επιβάλλεται σε εθνικό επίπεδο από την αρχή National Supervisory Authority for Personal Data Processing (ANSPDCP), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "National Supervisory Authority for Personal Data Processing (ANSPDCP)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.dataprotection.ro/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: National Supervisory Authority for Personal Data Processing (ANSPDCP)"
+    },
+    {
+      "id": "r-priv-eu-slovakia",
+      "category": "privacy",
+      "country": "Slovakia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Slovakia and is enforced nationally by the Úrad na ochranu osobných údajov Slovenskej republiky, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Σλοβακία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Úrad na ochranu osobných údajov Slovenskej republiky, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Úrad na ochranu osobných údajov Slovenskej republiky",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "http://www.dataprotection.gov.sk/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Úrad na ochranu osobných údajov Slovenskej republiky"
+    },
+    {
+      "id": "r-priv-eu-slovenia",
+      "category": "privacy",
+      "country": "Slovenia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Slovenia and is enforced nationally by the Information Commissioner of the Republic of Slovenia, which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Σλοβενία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Information Commissioner of the Republic of Slovenia, η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Information Commissioner of the Republic of Slovenia",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.ip-rs.si/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Information Commissioner of the Republic of Slovenia"
+    },
+    {
+      "id": "r-priv-eu-spain",
+      "category": "privacy",
+      "country": "Spain",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Spain and is enforced nationally by the Agencia Española de Protección de Datos (AEPD), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Ισπανία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Agencia Española de Protección de Datos (AEPD), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Agencia Española de Protección de Datos (AEPD)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.aepd.es/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Agencia Española de Protección de Datos (AEPD)"
+    },
+    {
+      "id": "r-priv-eu-sweden",
+      "category": "privacy",
+      "country": "Sweden",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "The GDPR (Regulation (EU) 2016/679) applies directly in Sweden and is enforced nationally by the Integritetsskyddsmyndigheten (IMY), which also issues national guidance on data processing, including by AI systems.",
+        "el": "Ο ΓΚΠΔ (Κανονισμός (ΕΕ) 2016/679) εφαρμόζεται απευθείας στη χώρα Σουηδία και επιβάλλεται σε εθνικό επίπεδο από την αρχή Integritetsskyddsmyndigheten (IMY), η οποία εκδίδει επίσης εθνικές κατευθυντήριες οδηγίες για την επεξεργασία δεδομένων, μεταξύ άλλων από συστήματα ΤΝ."
+      },
+      "source": "Integritetsskyddsmyndigheten (IMY)",
+      "article": {
+        "en": "Art. 5, 6 & 22 (GDPR, applies EU-wide)",
+        "el": "Άρθρο 5, 6 & 22 (ΓΚΠΔ, ισχύει σε όλη την ΕΕ)"
+      },
+      "url": "https://www.imy.se/",
+      "citation": "Regulation (EU) 2016/679 (GDPR); national enforcement: Integritetsskyddsmyndigheten (IMY)"
+    },
+    {
+      "id": "r-priv-us-california",
+      "category": "privacy",
+      "country": "California",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "California has a comprehensive consumer data privacy law, the CCPA, as amended by the CPRA, effective since 2020, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Καλιφόρνια διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την CCPA, as amended by the CPRA, σε ισχύ από το 2020, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "California state legislature",
+      "article": {
+        "en": "CCPA, as amended by the CPRA",
+        "el": "CCPA, as amended by the CPRA"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "CCPA, as amended by the CPRA, effective 2020 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-virginia",
+      "category": "privacy",
+      "country": "Virginia",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Virginia has a comprehensive consumer data privacy law, the Consumer Data Protection Act (VCDPA), effective since 2023, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Βιρτζίνια διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Protection Act (VCDPA), σε ισχύ από το 2023, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Virginia state legislature",
+      "article": {
+        "en": "Consumer Data Protection Act (VCDPA)",
+        "el": "Consumer Data Protection Act (VCDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Protection Act (VCDPA), effective 2023 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-colorado",
+      "category": "privacy",
+      "country": "Colorado",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Colorado has a comprehensive consumer data privacy law, the Colorado Privacy Act (CPA), effective since 2023, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Κολοράντο διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Colorado Privacy Act (CPA), σε ισχύ από το 2023, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Colorado state legislature",
+      "article": {
+        "en": "Colorado Privacy Act (CPA)",
+        "el": "Colorado Privacy Act (CPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Colorado Privacy Act (CPA), effective 2023 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-connecticut",
+      "category": "privacy",
+      "country": "Connecticut",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Connecticut has a comprehensive consumer data privacy law, the Data Privacy Act (CTDPA), effective since 2023, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Κονέκτικατ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Data Privacy Act (CTDPA), σε ισχύ από το 2023, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Connecticut state legislature",
+      "article": {
+        "en": "Data Privacy Act (CTDPA)",
+        "el": "Data Privacy Act (CTDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Data Privacy Act (CTDPA), effective 2023 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-utah",
+      "category": "privacy",
+      "country": "Utah",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Utah has a comprehensive consumer data privacy law, the Consumer Privacy Act (UCPA), effective since 2023, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Γιούτα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Privacy Act (UCPA), σε ισχύ από το 2023, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Utah state legislature",
+      "article": {
+        "en": "Consumer Privacy Act (UCPA)",
+        "el": "Consumer Privacy Act (UCPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Privacy Act (UCPA), effective 2023 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-texas",
+      "category": "privacy",
+      "country": "Texas",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Texas has a comprehensive consumer data privacy law, the Data Privacy and Security Act (TDPSA), effective since 2024, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Τέξας διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Data Privacy and Security Act (TDPSA), σε ισχύ από το 2024, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Texas state legislature",
+      "article": {
+        "en": "Data Privacy and Security Act (TDPSA)",
+        "el": "Data Privacy and Security Act (TDPSA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Data Privacy and Security Act (TDPSA), effective 2024 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-oregon",
+      "category": "privacy",
+      "country": "Oregon",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Oregon has a comprehensive consumer data privacy law, the Consumer Privacy Act (OCPA), effective since 2024, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Όρεγκον διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Privacy Act (OCPA), σε ισχύ από το 2024, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Oregon state legislature",
+      "article": {
+        "en": "Consumer Privacy Act (OCPA)",
+        "el": "Consumer Privacy Act (OCPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Privacy Act (OCPA), effective 2024 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-montana",
+      "category": "privacy",
+      "country": "Montana",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Montana has a comprehensive consumer data privacy law, the Consumer Data Privacy Act (MCDPA), effective since 2024, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Μοντάνα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Privacy Act (MCDPA), σε ισχύ από το 2024, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Montana state legislature",
+      "article": {
+        "en": "Consumer Data Privacy Act (MCDPA)",
+        "el": "Consumer Data Privacy Act (MCDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Privacy Act (MCDPA), effective 2024 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-florida",
+      "category": "privacy",
+      "country": "Florida",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Florida has a comprehensive consumer data privacy law, the Digital Bill of Rights (FDBR), effective since 2024, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Φλόριντα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Digital Bill of Rights (FDBR), σε ισχύ από το 2024, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Florida state legislature",
+      "article": {
+        "en": "Digital Bill of Rights (FDBR)",
+        "el": "Digital Bill of Rights (FDBR)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Digital Bill of Rights (FDBR), effective 2024 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-delaware",
+      "category": "privacy",
+      "country": "Delaware",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Delaware has a comprehensive consumer data privacy law, the Personal Data Privacy Act (DPDPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Ντελαγουέρ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Personal Data Privacy Act (DPDPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Delaware state legislature",
+      "article": {
+        "en": "Personal Data Privacy Act (DPDPA)",
+        "el": "Personal Data Privacy Act (DPDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Personal Data Privacy Act (DPDPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-iowa",
+      "category": "privacy",
+      "country": "Iowa",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Iowa has a comprehensive consumer data privacy law, the Consumer Data Protection Act (ICDPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Άιοβα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Protection Act (ICDPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Iowa state legislature",
+      "article": {
+        "en": "Consumer Data Protection Act (ICDPA)",
+        "el": "Consumer Data Protection Act (ICDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Protection Act (ICDPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-nebraska",
+      "category": "privacy",
+      "country": "Nebraska",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Nebraska has a comprehensive consumer data privacy law, the Data Privacy Act (NDPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Νεμπράσκα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Data Privacy Act (NDPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Nebraska state legislature",
+      "article": {
+        "en": "Data Privacy Act (NDPA)",
+        "el": "Data Privacy Act (NDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Data Privacy Act (NDPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-new-hampshire",
+      "category": "privacy",
+      "country": "New Hampshire",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "New Hampshire has a comprehensive consumer data privacy law, the Data Privacy Act (NHDPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Νιού Χάμσαϊρ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Privacy Act, σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "New Hampshire state legislature",
+      "article": {
+        "en": "Data Privacy Act (NHDPA)",
+        "el": "Data Privacy Act (NHDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Data Privacy Act (NHDPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-new-jersey",
+      "category": "privacy",
+      "country": "New Jersey",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "New Jersey has a comprehensive consumer data privacy law, the New Jersey Data Protection Act (NJDPA), N.J. Stat. § 56:8-166.4 et seq., effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Νιού Τζέρσεϊ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Data Privacy Act (NJDPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "New Jersey state legislature",
+      "article": {
+        "en": "New Jersey Data Protection Act (NJDPA), N.J. Stat. § 56:8-166.4 et seq.",
+        "el": "New Jersey Data Protection Act (NJDPA), N.J. Stat. § 56:8-166.4 κ.ε."
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "New Jersey Data Protection Act (NJDPA), N.J. Stat. § 56:8-166.4 et seq., effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-tennessee",
+      "category": "privacy",
+      "country": "Tennessee",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Tennessee has a comprehensive consumer data privacy law, the Information Protection Act (TIPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Τενεσί διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Information Protection Act (TIPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Tennessee state legislature",
+      "article": {
+        "en": "Information Protection Act (TIPA)",
+        "el": "Information Protection Act (TIPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Information Protection Act (TIPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-minnesota",
+      "category": "privacy",
+      "country": "Minnesota",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Minnesota has a comprehensive consumer data privacy law, the Consumer Data Privacy Act (MCDPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Μινεσότα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Privacy Act (MNCDPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Minnesota state legislature",
+      "article": {
+        "en": "Consumer Data Privacy Act (MCDPA)",
+        "el": "Consumer Data Privacy Act (MCDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Privacy Act (MCDPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-maryland",
+      "category": "privacy",
+      "country": "Maryland",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Maryland has a comprehensive consumer data privacy law, the Online Data Privacy Act (MODPA), effective since 2025, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Μέριλαντ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Online Data Privacy Act (MODPA), σε ισχύ από το 2025, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Maryland state legislature",
+      "article": {
+        "en": "Online Data Privacy Act (MODPA)",
+        "el": "Online Data Privacy Act (MODPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Online Data Privacy Act (MODPA), effective 2025 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-indiana",
+      "category": "privacy",
+      "country": "Indiana",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Indiana has a comprehensive consumer data privacy law, the Consumer Data Protection Act (INCDPA), effective since 2026, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Ιντιάνα διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Protection Act (INCDPA), σε ισχύ από το 2026, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Indiana state legislature",
+      "article": {
+        "en": "Consumer Data Protection Act (INCDPA)",
+        "el": "Consumer Data Protection Act (INCDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Protection Act (INCDPA), effective 2026 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-kentucky",
+      "category": "privacy",
+      "country": "Kentucky",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Kentucky has a comprehensive consumer data privacy law, the Consumer Data Protection Act (KCDPA), effective since 2026, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Κεντάκι διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Consumer Data Protection Act (KCDPA), σε ισχύ από το 2026, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Kentucky state legislature",
+      "article": {
+        "en": "Consumer Data Protection Act (KCDPA)",
+        "el": "Consumer Data Protection Act (KCDPA)"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Consumer Data Protection Act (KCDPA), effective 2026 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-rhode-island",
+      "category": "privacy",
+      "country": "Rhode Island",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "Rhode Island has a comprehensive consumer data privacy law, the Data Transparency and Privacy Protection Act, effective since 2026, which grants residents rights such as access, deletion, correction, and opt-out of the sale or targeted-advertising use of personal data — including data processed by AI systems.",
+        "el": "Η πολιτεία Ρόουντ Άιλαντ διαθέτει ολοκληρωμένο νόμο προστασίας δεδομένων καταναλωτών, τον/την Data Transparency and Privacy Protection Act, σε ισχύ από το 2026, ο οποίος παρέχει στους κατοίκους δικαιώματα πρόσβασης, διαγραφής, διόρθωσης και εναντίωσης στην πώληση ή στοχευμένη διαφημιστική χρήση προσωπικών δεδομένων — συμπεριλαμβανομένων δεδομένων που επεξεργάζονται συστήματα ΤΝ."
+      },
+      "source": "Rhode Island state legislature",
+      "article": {
+        "en": "Data Transparency and Privacy Protection Act",
+        "el": "Data Transparency and Privacy Protection Act"
+      },
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/",
+      "citation": "Data Transparency and Privacy Protection Act, effective 2026 — no federal equivalent exists; see IAPP US State Privacy Legislation Tracker"
+    },
+    {
+      "id": "r-priv-us-general",
+      "category": "privacy",
+      "country": "United States",
+      "sector": "General / Other",
+      "type": "regulation",
+      "text": {
+        "en": "There is still no comprehensive federal privacy law in the US. As of 2026, about 20 states (including California, Virginia, Colorado, and others) have their own comprehensive privacy law; most other states do not yet have one, though sector-specific federal laws like HIPAA (health) may still apply.",
+        "el": "Δεν υπάρχει ακόμη ολοκληρωμένος ομοσπονδιακός νόμος ιδιωτικότητας στις ΗΠΑ. Από το 2026, περίπου 20 πολιτείες (μεταξύ αυτών η Καλιφόρνια, η Βιρτζίνια, το Κολοράντο κ.ά.) έχουν δικό τους ολοκληρωμένο νόμο· οι περισσότερες άλλες πολιτείες δεν έχουν ακόμη, αν και κλαδικοί ομοσπονδιακοί νόμοι όπως ο HIPAA (υγεία) ενδέχεται να εξακολουθούν να ισχύουν."
+      },
+      "source": "IAPP US State Privacy Legislation Tracker",
+      "url": "https://iapp.org/resources/article/us-state-privacy-legislation-tracker/"
+    },
+    {
+      "id": "a-trans-general-1",
+      "category": "transparency",
+      "sector": "General / Other",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Write down, in plain language, what the AI system does and does not do, and make that available to anyone it affects, before deployment.",
+        "el": "Καταγράψτε, σε απλή γλώσσα, τι κάνει και τι δεν κάνει το σύστημα ΑΙ, και διαθέστε το σε όποιον επηρεάζεται, πριν την ανάπτυξή του."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-fair-general-1",
+      "category": "fairness",
+      "sector": "General / Other",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Before deployment, test the AI system's outputs across different demographic or protected groups, not just its overall accuracy.",
+        "el": "Πριν την ανάπτυξη, ελέγξτε τα αποτελέσματα του συστήματος ΑΙ σε διαφορετικές δημογραφικές ή προστατευόμενες ομάδες, όχι μόνο τη συνολική ακρίβειά του."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-harm-general-1",
+      "category": "non_maleficence",
+      "sector": "General / Other",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Map the realistic worst-case failure of the system before deployment, and put a simple way to pause or override it in place.",
+        "el": "Χαρτογραφήστε το ρεαλιστικό χειρότερο σενάριο αποτυχίας του συστήματος πριν την ανάπτυξη, και προβλέψτε έναν απλό τρόπο παύσης ή παράκαμψής του."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-priv-general-1",
+      "category": "privacy",
+      "sector": "General / Other",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Send only the minimum personal data the AI tool actually needs, and check whether the provider retains or trains on what you submit.",
+        "el": "Στείλτε στο εργαλείο ΑΙ μόνο τα ελάχιστα απαραίτητα προσωπικά δεδομένα, και ελέγξτε αν ο πάροχος διατηρεί ή εκπαιδεύεται πάνω σε ό,τι υποβάλλετε."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "r-hr-eu-1",
+      "category": "fairness",
+      "categories": [
+        "fairness",
+        "non_maleficence"
+      ],
+      "country": "European Union",
+      "sector": "Human Resources",
+      "type": "regulation",
+      "text": {
+        "en": "AI used for recruitment, selection, promotion, termination or task allocation is high-risk under the AI Act, and EU equal-treatment law prohibits discrimination in employment on grounds such as religion or belief, disability, age or sexual orientation, including when the decision is supported by an algorithm.",
+        "el": "Η ΤΝ που χρησιμοποιείται για προσλήψεις, επιλογή, προαγωγές, απολύσεις ή κατανομή καθηκόντων είναι υψηλού κινδύνου κατά τον AI Act, και το ενωσιακό δίκαιο ίσης μεταχείρισης απαγορεύει τις διακρίσεις στην απασχόληση λόγω θρησκείας ή πεποιθήσεων, αναπηρίας, ηλικίας ή γενετήσιου προσανατολισμού, ακόμη και όταν η απόφαση υποστηρίζεται από αλγόριθμο."
+      },
+      "source": "EU AI Act & EU equal-treatment law",
+      "article": {
+        "en": "AI Act Annex III, point 4; Directive 2000/78/EC, Art. 1–2",
+        "el": "AI Act Παράρτημα III, σημείο 4· Οδηγία 2000/78/ΕΚ, Άρθρα 1–2"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2000/78/oj",
+      "citation": "Regulation (EU) 2024/1689, Annex III(4); Council Directive 2000/78/EC establishing a general framework for equal treatment in employment and occupation"
+    },
+    {
+      "id": "r-hr-eu-2",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Human Resources",
+      "type": "regulation",
+      "text": {
+        "en": "Before putting a high-risk AI system into service at the workplace, employers must inform workers' representatives and the affected workers that they will be subject to it. People affected by decisions based on such a system have a right to an explanation.",
+        "el": "Πριν θέσει σε λειτουργία σύστημα ΤΝ υψηλού κινδύνου στον χώρο εργασίας, ο εργοδότης οφείλει να ενημερώσει τους εκπροσώπους των εργαζομένων και τους θιγόμενους εργαζομένους. Όσοι επηρεάζονται από αποφάσεις βασισμένες σε τέτοιο σύστημα έχουν δικαίωμα εξήγησης."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 26(7) & Art. 86",
+        "el": "Άρθρο 26(7) & Άρθρο 86"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 26(7), Art. 86"
+    },
+    {
+      "id": "r-hr-eu-3",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Human Resources",
+      "type": "regulation",
+      "text": {
+        "en": "Processing of employees' personal data is subject to the GDPR and to any more specific national rules adopted for the employment context, which must include safeguards for human dignity and transparency, in particular for monitoring systems at the workplace.",
+        "el": "Η επεξεργασία προσωπικών δεδομένων εργαζομένων υπόκειται στον ΓΚΠΔ και σε τυχόν ειδικότερους εθνικούς κανόνες για το εργασιακό πλαίσιο, οι οποίοι πρέπει να προβλέπουν εγγυήσεις για την ανθρώπινη αξιοπρέπεια και τη διαφάνεια, ιδίως για συστήματα παρακολούθησης στον χώρο εργασίας."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 88 (processing in the context of employment)",
+        "el": "Άρθρο 88 (επεξεργασία στο πλαίσιο της απασχόλησης)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 88"
+    },
+    {
+      "id": "r-fin-eu-1",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "accountability",
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Finance",
+      "type": "regulation",
+      "text": {
+        "en": "When creditworthiness is assessed with automated processing, consumers must be informed and have the right to human intervention, to a meaningful explanation of the assessment and the main variables used, and to request a review of the decision. The GDPR separately restricts decisions based solely on automated processing.",
+        "el": "Όταν η πιστοληπτική ικανότητα αξιολογείται με αυτοματοποιημένη επεξεργασία, ο καταναλωτής πρέπει να ενημερώνεται και έχει δικαίωμα ανθρώπινης παρέμβασης, κατανοητής εξήγησης της αξιολόγησης και των κύριων μεταβλητών, και επανεξέτασης της απόφασης. Ο ΓΚΠΔ περιορίζει επιπλέον τις αποφάσεις που βασίζονται αποκλειστικά σε αυτοματοποιημένη επεξεργασία."
+      },
+      "source": "Consumer Credit Directive (EU) 2023/2225 & GDPR",
+      "article": {
+        "en": "Directive (EU) 2023/2225, Art. 18; GDPR Art. 22",
+        "el": "Οδηγία (ΕΕ) 2023/2225, Άρθρο 18· ΓΚΠΔ Άρθρο 22"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2023/2225/oj",
+      "citation": "Directive (EU) 2023/2225 on credit agreements for consumers, Art. 18; Regulation (EU) 2016/679, Art. 22"
+    },
+    {
+      "id": "r-fin-eu-2",
+      "category": "fairness",
+      "categories": [
+        "fairness",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Finance",
+      "type": "regulation",
+      "text": {
+        "en": "AI used to evaluate creditworthiness or to price life and health insurance is high-risk, and deployers using it must carry out a fundamental-rights impact assessment before first use.",
+        "el": "Η ΤΝ που αξιολογεί την πιστοληπτική ικανότητα ή τιμολογεί ασφάλειες ζωής και υγείας είναι υψηλού κινδύνου, και οι φορείς που τη χρησιμοποιούν οφείλουν να διενεργήσουν εκτίμηση επιπτώσεων στα θεμελιώδη δικαιώματα πριν από την πρώτη χρήση."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Annex III, point 5(b)–(c); Art. 27",
+        "el": "Παράρτημα III, σημείο 5(β)–(γ)· Άρθρο 27"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Annex III(5), Art. 27"
+    },
+    {
+      "id": "r-hea-eu-1",
+      "category": "non_maleficence",
+      "categories": [
+        "non_maleficence",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Healthcare",
+      "type": "regulation",
+      "text": {
+        "en": "Software intended to provide information used for diagnostic or therapeutic decisions is a medical device and is classified at least as class IIa; AI that is, or is a safety component of, such a device is high-risk under the AI Act.",
+        "el": "Λογισμικό που προορίζεται να παρέχει πληροφορίες για διαγνωστικές ή θεραπευτικές αποφάσεις είναι ιατροτεχνολογικό προϊόν κατηγορίας τουλάχιστον IIa· η ΤΝ που αποτελεί τέτοιο προϊόν ή κατασκευαστικό στοιχείο ασφάλειάς του είναι υψηλού κινδύνου κατά τον AI Act."
+      },
+      "source": "Medical Device Regulation (EU) 2017/745 & AI Act",
+      "article": {
+        "en": "MDR Annex VIII, Rule 11; AI Act Art. 6(1) & Annex I",
+        "el": "MDR Παράρτημα VIII, Κανόνας 11· AI Act Άρθρο 6(1) & Παράρτημα I"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2017/745/oj",
+      "citation": "Regulation (EU) 2017/745 on medical devices, Annex VIII Rule 11; Regulation (EU) 2024/1689, Art. 6(1)"
+    },
+    {
+      "id": "r-hea-eu-2",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Healthcare",
+      "type": "regulation",
+      "text": {
+        "en": "Health data are a special category of personal data: processing them, including by AI tools, is prohibited unless a specific condition applies, such as explicit consent or the provision of health care under professional secrecy.",
+        "el": "Τα δεδομένα υγείας είναι ειδική κατηγορία προσωπικών δεδομένων: η επεξεργασία τους, και από εργαλεία ΤΝ, απαγορεύεται εκτός αν ισχύει συγκεκριμένη προϋπόθεση, όπως η ρητή συγκατάθεση ή η παροχή υγειονομικής περίθαλψης υπό επαγγελματικό απόρρητο."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 9 (special categories of personal data)",
+        "el": "Άρθρο 9 (ειδικές κατηγορίες δεδομένων)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 9"
+    },
+    {
+      "id": "r-edu-eu-1",
+      "category": "fairness",
+      "categories": [
+        "fairness",
+        "non_maleficence",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Education",
+      "type": "regulation",
+      "text": {
+        "en": "AI used to decide admission, evaluate learning outcomes, steer learning or monitor students during tests is high-risk, while emotion recognition in educational institutions is prohibited except for medical or safety reasons.",
+        "el": "Η ΤΝ που αποφασίζει για εισαγωγές, αξιολογεί μαθησιακά αποτελέσματα, κατευθύνει τη μάθηση ή επιτηρεί μαθητές σε εξετάσεις είναι υψηλού κινδύνου, ενώ η αναγνώριση συναισθημάτων σε εκπαιδευτικά ιδρύματα απαγορεύεται, εκτός από ιατρικούς λόγους ή λόγους ασφάλειας."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Annex III, point 3; Art. 5(1)(f)",
+        "el": "Παράρτημα III, σημείο 3· Άρθρο 5(1)(στ)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Annex III(3), Art. 5(1)(f)"
+    },
+    {
+      "id": "r-edu-eu-2",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Education",
+      "type": "regulation",
+      "text": {
+        "en": "Where an online service is offered directly to a child on the basis of consent, consent must be given or authorised by the holder of parental responsibility below the national age threshold (between 13 and 16).",
+        "el": "Όταν μια διαδικτυακή υπηρεσία προσφέρεται απευθείας σε παιδί με βάση τη συγκατάθεση, κάτω από το εθνικό όριο ηλικίας (μεταξύ 13 και 16 ετών) η συγκατάθεση δίνεται ή εγκρίνεται από τον ασκούντα τη γονική μέριμνα."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 8 (child's consent)",
+        "el": "Άρθρο 8 (συγκατάθεση παιδιού)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 8"
+    },
+    {
+      "id": "r-mkt-eu-1",
+      "category": "non_maleficence",
+      "categories": [
+        "non_maleficence",
+        "transparency"
+      ],
+      "country": "European Union",
+      "sector": "Marketing & Sales",
+      "type": "regulation",
+      "text": {
+        "en": "AI-driven personalisation or persuasion must not amount to a misleading or aggressive commercial practice that distorts consumers' decisions; manipulative AI techniques causing significant harm are prohibited outright by the AI Act.",
+        "el": "Η εξατομίκευση ή η πειθώ μέσω ΤΝ δεν επιτρέπεται να συνιστά παραπλανητική ή επιθετική εμπορική πρακτική που στρεβλώνει τις αποφάσεις των καταναλωτών· οι χειριστικές τεχνικές ΤΝ που προκαλούν σημαντική βλάβη απαγορεύονται ρητά από τον AI Act."
+      },
+      "source": "Unfair Commercial Practices Directive & AI Act",
+      "article": {
+        "en": "Directive 2005/29/EC, Art. 5–9; AI Act Art. 5(1)(a)–(b)",
+        "el": "Οδηγία 2005/29/ΕΚ, Άρθρα 5–9· AI Act Άρθρο 5(1)(α)–(β)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2005/29/oj",
+      "citation": "Directive 2005/29/EC on unfair commercial practices, Art. 5–9; Regulation (EU) 2024/1689, Art. 5(1)(a)–(b)"
+    },
+    {
+      "id": "r-mkt-eu-2",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Marketing & Sales",
+      "type": "regulation",
+      "text": {
+        "en": "Individuals have an absolute right to object to the processing of their personal data for direct marketing, including profiling related to it; once they object, the data may no longer be used for that purpose.",
+        "el": "Τα πρόσωπα έχουν απόλυτο δικαίωμα να αντιταχθούν στην επεξεργασία των δεδομένων τους για απευθείας εμπορική προώθηση, συμπεριλαμβανομένης της σχετικής κατάρτισης προφίλ· μετά την αντίταξη, τα δεδομένα δεν μπορούν πλέον να χρησιμοποιηθούν για τον σκοπό αυτό."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 21(2)–(3) (direct marketing)",
+        "el": "Άρθρο 21(2)–(3) (απευθείας εμπορική προώθηση)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 21"
+    },
+    {
+      "id": "r-mkt-eu-3",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "fairness"
+      ],
+      "country": "European Union",
+      "sector": "Marketing & Sales",
+      "type": "regulation",
+      "text": {
+        "en": "If a price has been personalised on the basis of automated decision-making, the trader must inform the consumer before the contract is concluded.",
+        "el": "Αν μια τιμή έχει εξατομικευτεί με βάση αυτοματοποιημένη λήψη αποφάσεων, ο έμπορος οφείλει να ενημερώσει τον καταναλωτή πριν από τη σύναψη της σύμβασης."
+      },
+      "source": "Consumer Rights Directive 2011/83/EU (as amended by Directive (EU) 2019/2161)",
+      "article": {
+        "en": "Art. 6(1)(ea)",
+        "el": "Άρθρο 6(1)(εα)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      "citation": "Directive 2011/83/EU, Art. 6(1)(ea), inserted by Directive (EU) 2019/2161"
+    },
+    {
+      "id": "r-cs-eu-1",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Customer Support",
+      "type": "regulation",
+      "text": {
+        "en": "Customers must be told when they are talking to a chatbot or AI assistant unless this is obvious, and a chatbot that decides alone on matters with significant effects for the customer (e.g. refusing a refund or claim) is subject to the GDPR's rules on automated decisions.",
+        "el": "Ο πελάτης πρέπει να ενημερώνεται ότι συνομιλεί με chatbot ή βοηθό ΤΝ, εκτός αν είναι προφανές, και ένα chatbot που αποφασίζει μόνο του για ζητήματα με σημαντικές συνέπειες για τον πελάτη (π.χ. απόρριψη επιστροφής χρημάτων ή αιτήματος) υπόκειται στους κανόνες του ΓΚΠΔ για τις αυτοματοποιημένες αποφάσεις."
+      },
+      "source": "EU AI Act & GDPR",
+      "article": {
+        "en": "AI Act Art. 50(1); GDPR Art. 22",
+        "el": "AI Act Άρθρο 50(1)· ΓΚΠΔ Άρθρο 22"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 50(1); Regulation (EU) 2016/679, Art. 22"
+    },
+    {
+      "id": "r-sw-eu-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "non_maleficence"
+      ],
+      "country": "European Union",
+      "sector": "Software Development",
+      "type": "regulation",
+      "text": {
+        "en": "Software, including AI systems, is a product under the revised EU product liability rules, so the developer can be held strictly liable for damage caused by a defect, including defects arising from updates or missing security patches.",
+        "el": "Το λογισμικό, και τα συστήματα ΤΝ, είναι προϊόν κατά τους αναθεωρημένους ενωσιακούς κανόνες ευθύνης για ελαττωματικά προϊόντα, οπότε ο κατασκευαστής ευθύνεται αντικειμενικά για ζημίες από ελάττωμα, μεταξύ άλλων από ενημερώσεις ή από ελλείπουσες διορθώσεις ασφάλειας."
+      },
+      "source": "Product Liability Directive (EU) 2024/2853",
+      "article": {
+        "en": "Art. 4(1) (definition of product)",
+        "el": "Άρθρο 4(1) (ορισμός του προϊόντος)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/2853/oj",
+      "citation": "Directive (EU) 2024/2853 on liability for defective products"
+    },
+    {
+      "id": "r-sw-eu-2",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency"
+      ],
+      "country": "European Union",
+      "sector": "Software Development",
+      "type": "regulation",
+      "text": {
+        "en": "Whoever develops an AI system and places it on the market under their own name is its provider: for high-risk systems this means a quality management system, technical documentation and conformity assessment, and providers of general-purpose AI models must document them and publish a summary of their training content.",
+        "el": "Όποιος αναπτύσσει σύστημα ΤΝ και το διαθέτει στην αγορά με το δικό του όνομα είναι ο πάροχός του: για συστήματα υψηλού κινδύνου αυτό σημαίνει σύστημα διαχείρισης ποιότητας, τεχνική τεκμηρίωση και αξιολόγηση συμμόρφωσης, ενώ οι πάροχοι μοντέλων γενικού σκοπού οφείλουν να τα τεκμηριώνουν και να δημοσιεύουν περίληψη του περιεχομένου εκπαίδευσής τους."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 16–17, 43 & 53",
+        "el": "Άρθρα 16–17, 43 & 53"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 16, 17, 43, 53"
+    },
+    {
+      "id": "r-art-eu-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency",
+        "fairness"
+      ],
+      "country": "European Union",
+      "sector": "Arts & Creative Industries",
+      "type": "regulation",
+      "text": {
+        "en": "Rights holders can reserve their works against text and data mining, including for AI training, in a machine-readable way; providers of general-purpose AI models must have a policy to respect such reservations and publish a sufficiently detailed summary of the content used for training.",
+        "el": "Οι δικαιούχοι μπορούν να εξαιρέσουν τα έργα τους από την εξόρυξη κειμένων και δεδομένων, και άρα από την εκπαίδευση ΤΝ, με μηχαναγνώσιμο τρόπο· οι πάροχοι μοντέλων γενικού σκοπού οφείλουν να έχουν πολιτική σεβασμού αυτών των εξαιρέσεων και να δημοσιεύουν επαρκώς λεπτομερή περίληψη του περιεχομένου εκπαίδευσης."
+      },
+      "source": "Copyright in the Digital Single Market Directive & AI Act",
+      "article": {
+        "en": "Directive (EU) 2019/790, Art. 4(3); AI Act Art. 53(1)(c)–(d)",
+        "el": "Οδηγία (ΕΕ) 2019/790, Άρθρο 4(3)· AI Act Άρθρο 53(1)(γ)–(δ)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/790/oj",
+      "citation": "Directive (EU) 2019/790 on copyright in the Digital Single Market, Art. 4(3); Regulation (EU) 2024/1689, Art. 53(1)(c)–(d)"
+    },
+    {
+      "id": "r-art-eu-2",
+      "category": "transparency",
+      "categories": [
+        "transparency"
+      ],
+      "country": "European Union",
+      "sector": "Arts & Creative Industries",
+      "type": "regulation",
+      "text": {
+        "en": "AI-generated or manipulated images, audio and video that resemble real people, places or events must be disclosed as such; for evidently artistic, creative, satirical or fictional works the duty is limited to disclosing the existence of such content in a way that does not hamper the display of the work.",
+        "el": "Εικόνες, ήχος και βίντεο που παράγονται ή αλλοιώνονται με ΤΝ και μοιάζουν με πραγματικά πρόσωπα, τόπους ή γεγονότα πρέπει να γνωστοποιούνται ως τέτοια· για προδήλως καλλιτεχνικά, δημιουργικά, σατιρικά ή μυθοπλαστικά έργα η υποχρέωση περιορίζεται στη γνωστοποίηση της ύπαρξης τέτοιου περιεχομένου με τρόπο που δεν εμποδίζει την παρουσίαση του έργου."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 50(2) & 50(4)",
+        "el": "Άρθρο 50(2) & 50(4)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 50(2), 50(4)"
+    },
+    {
+      "id": "r-hos-eu-1",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "fairness"
+      ],
+      "country": "European Union",
+      "sector": "Hospitality & Food Service",
+      "type": "regulation",
+      "text": {
+        "en": "If room rates, menu prices or offers are personalised for a specific guest by automated decision-making, the guest must be told that the price was personalised; general demand-based dynamic pricing is not covered by this duty.",
+        "el": "Αν οι τιμές δωματίων, μενού ή προσφορών εξατομικεύονται για συγκεκριμένο πελάτη με αυτοματοποιημένη λήψη αποφάσεων, ο πελάτης πρέπει να ενημερώνεται ότι η τιμή εξατομικεύτηκε· η γενική δυναμική τιμολόγηση με βάση τη ζήτηση δεν εμπίπτει σε αυτή την υποχρέωση."
+      },
+      "source": "Consumer Rights Directive 2011/83/EU (as amended by Directive (EU) 2019/2161)",
+      "article": {
+        "en": "Art. 6(1)(ea)",
+        "el": "Άρθρο 6(1)(εα)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      "citation": "Directive 2011/83/EU, Art. 6(1)(ea), inserted by Directive (EU) 2019/2161"
+    },
+    {
+      "id": "r-hos-eu-2",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "non_maleficence",
+        "accountability"
+      ],
+      "country": "European Union",
+      "sector": "Hospitality & Food Service",
+      "type": "regulation",
+      "text": {
+        "en": "Submitting, commissioning or generating fake consumer reviews, including with AI, and presenting reviews as genuine without reasonable checks are always unfair commercial practices.",
+        "el": "Η υποβολή, ανάθεση ή παραγωγή ψεύτικων κριτικών καταναλωτών, και με χρήση ΤΝ, καθώς και η παρουσίαση κριτικών ως γνήσιων χωρίς εύλογο έλεγχο, συνιστούν πάντοτε αθέμιτες εμπορικές πρακτικές."
+      },
+      "source": "Unfair Commercial Practices Directive 2005/29/EC (as amended by Directive (EU) 2019/2161)",
+      "article": {
+        "en": "Annex I, points 23b–23c",
+        "el": "Παράρτημα I, σημεία 23β–23γ"
+      },
+      "url": "https://eur-lex.europa.eu/eli/dir/2005/29/oj",
+      "citation": "Directive 2005/29/EC, Annex I points 23b–23c, inserted by Directive (EU) 2019/2161"
+    },
+    {
+      "id": "r-hos-eu-3",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Hospitality & Food Service",
+      "type": "regulation",
+      "text": {
+        "en": "Facial recognition for check-in, room access or loyalty schemes processes biometric data, a special category that generally requires explicit consent, which is only valid if guests are offered a genuine non-biometric alternative.",
+        "el": "Η αναγνώριση προσώπου για check-in, πρόσβαση σε δωμάτια ή προγράμματα επιβράβευσης επεξεργάζεται βιομετρικά δεδομένα, ειδική κατηγορία που κατά κανόνα απαιτεί ρητή συγκατάθεση, η οποία είναι έγκυρη μόνο αν προσφέρεται στους πελάτες πραγματική εναλλακτική χωρίς βιομετρικά."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 9 & Art. 7 (conditions for consent)",
+        "el": "Άρθρο 9 & Άρθρο 7 (προϋποθέσεις συγκατάθεσης)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 7, Art. 9"
+    },
+    {
+      "id": "r-pub-eu-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "fairness",
+        "transparency"
+      ],
+      "country": "European Union",
+      "sector": "Public Sector",
+      "type": "regulation",
+      "text": {
+        "en": "Public bodies using high-risk AI must carry out a fundamental-rights impact assessment before first use and register their use in the EU database; AI that decides eligibility for public benefits and services is high-risk.",
+        "el": "Οι δημόσιοι φορείς που χρησιμοποιούν ΤΝ υψηλού κινδύνου οφείλουν να διενεργούν εκτίμηση επιπτώσεων στα θεμελιώδη δικαιώματα πριν από την πρώτη χρήση και να καταχωρίζουν τη χρήση στη βάση δεδομένων της ΕΕ· η ΤΝ που αποφασίζει για την επιλεξιμότητα σε δημόσιες παροχές και υπηρεσίες είναι υψηλού κινδύνου."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Art. 27, Art. 49; Annex III, point 5(a)",
+        "el": "Άρθρο 27, Άρθρο 49· Παράρτημα III, σημείο 5(α)"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 27, Art. 49, Annex III(5)(a)"
+    },
+    {
+      "id": "r-pub-eu-2",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Public Sector",
+      "type": "regulation",
+      "text": {
+        "en": "Public authorities usually process personal data on the basis of a task carried out in the public interest, and must carry out a data protection impact assessment before processing likely to result in a high risk, such as systematic evaluation of people by AI.",
+        "el": "Οι δημόσιες αρχές επεξεργάζονται συνήθως δεδομένα με βάση την εκπλήρωση καθήκοντος δημόσιου συμφέροντος, και οφείλουν να διενεργούν εκτίμηση αντικτύπου πριν από επεξεργασία που ενδέχεται να ενέχει υψηλό κίνδυνο, όπως η συστηματική αξιολόγηση προσώπων με ΤΝ."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 6(1)(e) & Art. 35",
+        "el": "Άρθρο 6(1)(ε) & Άρθρο 35"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 6(1)(e), Art. 35"
+    },
+    {
+      "id": "r-leg-eu-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "non_maleficence",
+        "fairness"
+      ],
+      "country": "European Union",
+      "sector": "Legal Services",
+      "type": "regulation",
+      "text": {
+        "en": "AI intended to assist a judicial authority, or alternative dispute resolution, in researching and interpreting facts and law and applying the law is high-risk and requires effective human oversight; the final decision must remain a human activity.",
+        "el": "Η ΤΝ που προορίζεται να συνδράμει δικαστική αρχή, ή μηχανισμό εναλλακτικής επίλυσης διαφορών, στην έρευνα και ερμηνεία πραγματικών περιστατικών και δικαίου και στην εφαρμογή του δικαίου είναι υψηλού κινδύνου και απαιτεί αποτελεσματική ανθρώπινη εποπτεία· η τελική απόφαση πρέπει να παραμένει ανθρώπινη δραστηριότητα."
+      },
+      "source": "EU Artificial Intelligence Act",
+      "article": {
+        "en": "Annex III, point 8(a); Art. 14",
+        "el": "Παράρτημα III, σημείο 8(α)· Άρθρο 14"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Annex III(8)(a), Art. 14"
+    },
+    {
+      "id": "r-leg-eu-2",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "country": "European Union",
+      "sector": "Legal Services",
+      "type": "regulation",
+      "text": {
+        "en": "Entering client data into an external AI service makes its provider a processor: a written processing agreement and appropriate security measures are required, in addition to the professional secrecy duties of lawyers under national law.",
+        "el": "Η εισαγωγή δεδομένων πελατών σε εξωτερική υπηρεσία ΤΝ καθιστά τον πάροχό της εκτελούντα την επεξεργασία: απαιτούνται γραπτή σύμβαση επεξεργασίας και κατάλληλα μέτρα ασφάλειας, πέρα από τις υποχρεώσεις επαγγελματικού απορρήτου των δικηγόρων κατά το εθνικό δίκαιο."
+      },
+      "source": "General Data Protection Regulation (EU)",
+      "article": {
+        "en": "Art. 28 & Art. 32",
+        "el": "Άρθρο 28 & Άρθρο 32"
+      },
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "citation": "Regulation (EU) 2016/679 (General Data Protection Regulation), OJ L 119, 4.5.2016, Art. 28, Art. 32"
+    },
+    {
+      "id": "a-acc-art-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency",
+        "fairness"
+      ],
+      "sector": "Arts & Creative Industries",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Check the terms of every generative AI tool you use: whether outputs may be used commercially and whether the provider publishes how its training data respects opt-outs. Keep a record of the human creative contribution to each work.",
+        "el": "Ελέγξτε τους όρους κάθε εργαλείου παραγωγικής ΤΝ που χρησιμοποιείτε: αν επιτρέπεται εμπορική χρήση των αποτελεσμάτων και αν ο πάροχος δημοσιεύει πώς τα δεδομένα εκπαίδευσής του σέβονται τις εξαιρέσεις των δικαιούχων. Τηρείτε αρχείο της ανθρώπινης δημιουργικής συμβολής σε κάθε έργο."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-trans-art-1",
+      "category": "transparency",
+      "categories": [
+        "transparency"
+      ],
+      "sector": "Arts & Creative Industries",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Label AI-generated or AI-altered artwork, music or video when you publish it, and use machine-readable content credentials where your tools support them.",
+        "el": "Σημειώνετε ως τέτοια τα έργα, τη μουσική ή τα βίντεο που παράγονται ή αλλοιώνονται με ΤΝ όταν τα δημοσιεύετε, και χρησιμοποιείτε μηχαναγνώσιμα διαπιστευτήρια περιεχομένου όπου τα υποστηρίζουν τα εργαλεία σας."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "r-art-eu-3",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency"
+      ],
+      "country": "European Union",
+      "sector": "Arts & Creative Industries",
+      "type": "regulation",
+      "text": {
+        "en": "Under EU law, copyright protects only works that are the author's own intellectual creation, which presupposes creative choices made by a human. Music, images or text generated by an AI tool without such human creative choices may not qualify as a protected work, so declaring yourself the creator or producer must reflect what you actually created. Rights in AI outputs also depend on the tool's terms of use.",
+        "el": "Κατά το ενωσιακό δίκαιο, η πνευματική ιδιοκτησία προστατεύει μόνο έργα που αποτελούν πρωτότυπη πνευματική δημιουργία του δημιουργού τους, κάτι που προϋποθέτει δημιουργικές επιλογές ανθρώπου. Μουσική, εικόνες ή κείμενα που παράγει ένα εργαλείο ΤΝ χωρίς τέτοιες ανθρώπινες δημιουργικές επιλογές ενδέχεται να μην αποτελούν προστατευόμενο έργο, οπότε μια δήλωση ότι είστε ο δημιουργός ή ο παραγωγός πρέπει να αντιστοιχεί σε όσα πράγματι δημιουργήσατε. Τα δικαιώματα στα αποτελέσματα εξαρτώνται επίσης από τους όρους χρήσης του εργαλείου."
+      },
+      "source": "Court of Justice of the EU, Infopaq (C-5/08)",
+      "article": {
+        "en": "Originality: 'author's own intellectual creation' (Case C-5/08)",
+        "el": "Πρωτοτυπία: «πνευματική δημιουργία του ίδιου του δημιουργού» (Υπόθεση C-5/08)"
+      },
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62008CJ0005",
+      "citation": "CJEU, Case C-5/08, Infopaq International A/S v Danske Dagblades Forening, judgment of 16 July 2009, EU:C:2009:465"
+    },
+    {
+      "id": "r-art-gr-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency"
+      ],
+      "country": "Greece",
+      "sector": "Arts & Creative Industries",
+      "type": "regulation",
+      "text": {
+        "en": "In Greece, a work is protected only if it is an original intellectual creation of literature, art or science, including musical compositions with or without lyrics. Whether an AI-assisted song is your work therefore depends on your own creative contribution, which you should be able to document.",
+        "el": "Στην Ελλάδα, ένα έργο προστατεύεται μόνο αν είναι πρωτότυπο πνευματικό δημιούργημα λόγου, τέχνης ή επιστήμης, συμπεριλαμβανομένων των μουσικών συνθέσεων με ή χωρίς στίχους. Το αν ένα τραγούδι που δημιουργήθηκε με τη βοήθεια ΤΝ είναι δικό σας έργο εξαρτάται επομένως από τη δική σας δημιουργική συμβολή, την οποία πρέπει να μπορείτε να τεκμηριώσετε."
+      },
+      "source": "Greek Copyright Law 2121/1993",
+      "article": {
+        "en": "Law 2121/1993, Art. 2(1) (subject matter of copyright)",
+        "el": "Ν. 2121/1993, Άρθρο 2 παρ. 1 (αντικείμενο του δικαιώματος)"
+      },
+      "url": "https://www.lawspot.gr/nomikes-plirofories/nomothesia/n-2121-1993/arthro-2-nomos-2121-1993-antikeimeno-toy-dikaiomatos",
+      "citation": "Greek Law 2121/1993 on copyright, related rights and cultural matters (ΦΕΚ Α' 25/4.3.1993), Art. 2(1)"
+    },
+    {
+      "id": "a-acc-art-2",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "transparency"
+      ],
+      "sector": "Arts & Creative Industries",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Before registering an AI-assisted track or artwork with a collecting society, distributor or platform, check their rules on AI-generated content, declare only the parts you actually created (e.g. lyrics, arrangement, editing), and disclose the AI tool's role where they require it.",
+        "el": "Πριν δηλώσετε ένα κομμάτι ή έργο που δημιουργήθηκε με τη βοήθεια ΤΝ σε οργανισμό συλλογικής διαχείρισης, διανομέα ή πλατφόρμα, ελέγξτε τους κανόνες τους για το περιεχόμενο που παράγεται με ΤΝ, δηλώστε μόνο όσα πράγματι δημιουργήσατε (π.χ. στίχους, ενορχήστρωση, επεξεργασία), και γνωστοποιήστε τον ρόλο του εργαλείου ΤΝ όπου το απαιτούν."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-trans-hos-1",
+      "category": "transparency",
+      "categories": [
+        "transparency",
+        "fairness"
+      ],
+      "sector": "Hospitality & Food Service",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Tell guests when prices or offers are personalised, never use AI to write or post reviews in guests' names, and make sure a human can take over from any booking or ordering chatbot.",
+        "el": "Ενημερώνετε τους πελάτες όταν οι τιμές ή οι προσφορές εξατομικεύονται, μη χρησιμοποιείτε ποτέ ΤΝ για να γράφετε ή να δημοσιεύετε κριτικές στο όνομα πελατών, και βεβαιωθείτε ότι ένας άνθρωπος μπορεί να αναλάβει από οποιοδήποτε chatbot κρατήσεων ή παραγγελιών."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-priv-hos-1",
+      "category": "privacy",
+      "categories": [
+        "privacy"
+      ],
+      "sector": "Hospitality & Food Service",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Offer a non-biometric alternative for check-in or entry, and do not paste guest lists, passport details or payment data into public AI tools.",
+        "el": "Προσφέρετε εναλλακτική χωρίς βιομετρικά για check-in ή είσοδο, και μην επικολλάτε λίστες πελατών, στοιχεία διαβατηρίων ή δεδομένα πληρωμών σε δημόσια εργαλεία ΤΝ."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-acc-pub-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "fairness",
+        "transparency"
+      ],
+      "sector": "Public Sector",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Before using AI for decisions about citizens, run and document a fundamental-rights and data-protection impact assessment, register the system where required, and publish a plain-language description of how it is used.",
+        "el": "Πριν χρησιμοποιήσετε ΤΝ για αποφάσεις που αφορούν πολίτες, διενεργήστε και τεκμηριώστε εκτίμηση επιπτώσεων στα θεμελιώδη δικαιώματα και στην προστασία δεδομένων, καταχωρίστε το σύστημα όπου απαιτείται, και δημοσιεύστε κατανοητή περιγραφή του τρόπου χρήσης του."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-acc-leg-1",
+      "category": "accountability",
+      "categories": [
+        "accountability",
+        "privacy"
+      ],
+      "sector": "Legal Services",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Verify every case, statute and citation produced by an AI tool against the official source before relying on it, and never enter privileged client information into AI services without a processing agreement.",
+        "el": "Επαληθεύστε κάθε απόφαση, νόμο και παραπομπή που παράγει ένα εργαλείο ΤΝ έναντι της επίσημης πηγής πριν βασιστείτε σε αυτήν, και μην εισάγετε ποτέ απόρρητες πληροφορίες πελατών σε υπηρεσίες ΤΝ χωρίς σύμβαση επεξεργασίας."
+      },
+      "source": "Recommended practice"
+    },
+    {
+      "id": "a-fair-edu-1",
+      "category": "fairness",
+      "categories": [
+        "fairness",
+        "transparency",
+        "accountability"
+      ],
+      "sector": "Education",
+      "country": "General / Other",
+      "type": "action",
+      "text": {
+        "en": "Keep a teacher responsible for every AI-assisted grade or admission decision, tell students when AI is used, and check results across student groups for systematic differences.",
+        "el": "Διατηρήστε έναν εκπαιδευτικό υπεύθυνο για κάθε βαθμό ή απόφαση εισαγωγής που υποβοηθείται από ΤΝ, ενημερώνετε τους μαθητές όταν χρησιμοποιείται ΤΝ, και ελέγχετε τα αποτελέσματα ανά ομάδα μαθητών για συστηματικές διαφορές."
+      },
+      "source": "Recommended practice"
+    }
+  ]
+}

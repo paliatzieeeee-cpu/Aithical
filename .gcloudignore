@@ -1,0 +1,21 @@
+# Αρχεία που ΔΕΝ ανεβαίνουν με «gcloud run deploy --source».
+# Ρητό αρχείο, ώστε το gcloud να μη χρησιμοποιήσει το .gitignore, που
+# εξαιρεί το saved_model/ (το εκπαιδευμένο μοντέλο πρέπει να ανέβει).
+venv/
+.venv/
+.env
+.idea/
+.claude/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+*.docx
+*.zip
+*.rar
+*.log
+logs/
+model/training_data_best_*.py
+saved_model/best_*.keras
+data/usage_log*.jsonl
+data/augmentation_*.jsonl

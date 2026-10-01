@@ -1,0 +1,943 @@
+/* ---------------------------------------------------------------
+   Aithicist — design tokens
+
+   Color
+     --ink        #16213A  headings, primary text
+     --ink-soft   #4B5768  secondary text
+     --paper      #FAFAF7  page background
+     --surface    #FFFFFF  panel/report background
+     --aegean     #2C6E8C  primary accent (Aegean blue — the founder's
+                            alma mater, Aegean College)
+     --aegean-dim #E7EEF1  tinted accent for backgrounds/hover
+     --rust       #B5533C  used sparingly, only for warnings/disclaimer
+     --mist       #E1E6EA  borders and dividers
+
+   Type
+     Source Serif 4 — headings, report body (authoritative "brief" feel)
+     Inter          — UI chrome: labels, buttons, form controls, meta text
+
+   Layout
+     Two columns on desktop: a sticky input panel (left) and a scrolling
+     report column (right), styled like a numbered advisory memo rather
+     than chat bubbles or a SaaS card grid.
+------------------------------------------------------------------ */
+
+:root {
+  --ink: #16213A;
+  --ink-soft: #4B5768;
+  --paper: #FAFAF7;
+  --surface: #FFFFFF;
+  --aegean: #2C6E8C;
+  --aegean-dim: #E7EEF1;
+  --rust: #A34E37;
+  --rust-dim: #F5E9E5;
+  --mist: #E1E6EA;
+
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --shadow: 0 8px 24px rgba(22, 33, 58, 0.12);
+  color-scheme: light;
+}
+
+/* ---------- Σκούρο θέμα: το Αιγαίο τη νύχτα ----------
+   Ίδια παλέτα με το φωτεινό, σε βαθύ νυχτερινό μπλε αντί για γενικό
+   μαύρο. Μελάνι και επιφάνεια αντιστρέφονται μαζί, οπότε τα κουμπιά
+   (σκούρο φόντο/ανοιχτό κείμενο) διατηρούν την αντίθεσή τους. */
+:root[data-theme="dark"] {
+  --ink: #E4E9EF;
+  --ink-soft: #A7B2BF;
+  --paper: #0F1822;
+  --surface: #16212D;
+  --aegean: #6FB3D2;
+  --aegean-dim: #1C3040;
+  --rust: #E08A70;
+  --rust-dim: #35231E;
+  --mist: #2A3847;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+
+a { color: var(--aegean); }
+
+/* ---------- Masthead (Κεφαλίδα) ---------- */
+
+.masthead {
+  border-bottom: 1px solid var(--mist);
+  background: var(--surface);
+}
+
+.masthead-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 22px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wordmark-mark {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--aegean);
+  border: 1.5px solid var(--aegean);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.wordmark-text { display: flex; flex-direction: column; }
+
+.wordmark-title {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.wordmark-sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.masthead-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.masthead-note {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--mist);
+}
+
+.lang-btn {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: none;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn:first-child { border-right: 1px solid var(--mist); }
+
+.lang-btn.active {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.lang-btn:hover:not(.active) {
+  background: var(--aegean-dim);
+  color: var(--ink);
+}
+
+/* ---------- Layout (Γενική διάταξη σελίδας) ---------- */
+
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 32px 80px;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 880px) {
+  .layout { grid-template-columns: 1fr; padding: 28px 20px 60px; }
+}
+
+/* ---------- Input panel (Πλαίσιο εισαγωγής διλήμματος) ---------- */
+
+.panel-input {
+  position: sticky;
+  top: 24px;
+  background: var(--surface);
+  border: 1px solid var(--mist);
+  padding: 28px;
+}
+
+@media (max-width: 880px) { .panel-input { position: static; } }
+
+.panel-input h1 {
+  font-family: var(--serif);
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.lede {
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  margin: 0 0 24px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+textarea, select {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--mist);
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+textarea:focus, select:focus, button:focus-visible {
+  outline: 2px solid var(--aegean);
+  outline-offset: 1px;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 4px 0 20px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.field select { cursor: pointer; }
+
+.sub-select-field {
+  margin: -8px 0 22px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--aegean);
+  cursor: pointer;
+}
+
+.checkbox-note {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+button#submit-btn {
+  width: 100%;
+  background: var(--ink);
+  color: var(--surface);
+  border: none;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 16px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button#submit-btn:hover { background: var(--aegean); }
+
+button#submit-btn:disabled {
+  background: var(--mist);
+  color: var(--ink-soft);
+  cursor: progress;
+}
+
+.form-error {
+  margin: 14px 0 0;
+  color: var(--rust);
+  font-size: 13.5px;
+}
+
+/* ---------- Report panel (Πλαίσιο αναφοράς συμβουλευτικής) ---------- */
+
+.panel-report { min-height: 400px; }
+
+.report-empty {
+  border: 1px dashed var(--mist);
+  padding: 48px 32px;
+  color: var(--ink-soft);
+}
+
+.report-empty p { margin: 0 0 8px; font-size: 15px; }
+.report-empty-detail { font-size: 13.5px; }
+
+.report-header {
+  margin-bottom: 32px;
+}
+
+.report-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.report-eyebrow {
+  margin: 0;
+  font-size: 13px;
+  color: var(--aegean);
+  font-weight: 600;
+}
+
+.report-dilemma {
+  margin: 0;
+  padding-left: 18px;
+  border-left: 3px solid var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-style: normal;
+}
+
+.narrative-block {
+  background: var(--aegean-dim);
+  border-left: 3px solid var(--aegean);
+  padding: 18px 20px;
+  margin-bottom: 28px;
+}
+
+.narrative-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--aegean);
+  text-transform: none;
+}
+
+.narrative-label span {
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin-left: 6px;
+}
+
+.narrative-block p#narrative-text {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.narrative-error {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin: 0 0 24px;
+}
+
+.report-section {
+  padding: 26px 0;
+  border-top: 1px solid var(--mist);
+}
+
+.report-section h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.section-number {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--surface);
+  background: var(--aegean);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.llm-assist-note {
+  margin: -6px 0 14px;
+  font-size: 12px;
+  color: var(--aegean);
+  font-style: italic;
+}
+
+.dimension-list, .source-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dimension-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  background: var(--aegean-dim);
+}
+
+.dimension-name { font-weight: 600; font-size: 14.5px; }
+.dimension-desc { display: block; font-weight: 400; font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+
+.dimension-score {
+  font-size: 12.5px;
+  color: var(--aegean);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.source-item {
+  padding: 14px 16px;
+  border: 1px solid var(--mist);
+}
+
+.source-text { margin: 0 0 6px; font-size: 14.5px; }
+
+.source-meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.source-meta .tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--aegean);
+  border: 1px solid var(--aegean);
+  padding: 1px 7px;
+  margin-right: 8px;
+}
+
+.source-link {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--aegean);
+  text-decoration: none;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+.empty-note {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.live-sources-note {
+  margin: -6px 0 14px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.biblio-note {
+  margin: -6px 0 14px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.live-sources-error {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.live-source-item {
+  border-left: 3px solid var(--rust);
+}
+
+.report-disclaimer {
+  background: var(--rust-dim);
+  padding: 22px 24px;
+  border-top: none;
+  margin-top: 10px;
+}
+
+.report-disclaimer h2 .section-number { background: var(--rust); }
+
+.report-disclaimer p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+/* ---------- Πυραμίδα κινδύνου του Κανονισμού ΤΝ της ΕΕ ----------
+   Τέσσερις ζώνες με «θερμοκρασία» από το κόκκινο (απαγορευμένο) στο
+   πράσινο (ελάχιστο). Ανενεργές ζώνες σβήνουν, η ενεργή φωτίζεται και
+   δέχεται τον δείκτη. Το υπόμνημα δεξιά έχει ύψος γραμμής ίσο με το ύψος
+   κάθε ζώνης, ώστε κάθε ετικέτα να στέκεται δίπλα στη ζώνη της. */
+:root {
+  --risk-unacceptable: #B42318;
+  --risk-high: #C2570C;
+  --risk-limited: #A87B00;
+  --risk-minimal: #2E7D4F;
+  --band-h: 60px;
+}
+:root[data-theme="dark"] {
+  --risk-unacceptable: #F07167;
+  --risk-high: #F59E4B;
+  --risk-limited: #E3B341;
+  --risk-minimal: #5CC28A;
+}
+
+.risk-verdict {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: 16.5px;
+  font-weight: 600;
+  padding-left: 12px;
+  border-left: 3px solid var(--tier-color, var(--aegean));
+}
+
+#section-risk[data-tier="unacceptable"] { --tier-color: var(--risk-unacceptable); }
+#section-risk[data-tier="high"] { --tier-color: var(--risk-high); }
+#section-risk[data-tier="limited"] { --tier-color: var(--risk-limited); }
+#section-risk[data-tier="minimal"] { --tier-color: var(--risk-minimal); }
+
+.risk-pyramid-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.risk-pyramid {
+  flex-shrink: 0;
+  width: calc(var(--band-h) * 10 / 3);
+  height: calc(var(--band-h) * 4);
+  overflow: visible;
+}
+
+.risk-band {
+  stroke: var(--surface);
+  stroke-width: 3;
+  opacity: 0.22;
+  transition: opacity 0.25s ease;
+}
+.risk-band[data-tier="unacceptable"] { fill: var(--risk-unacceptable); }
+.risk-band[data-tier="high"] { fill: var(--risk-high); }
+.risk-band[data-tier="limited"] { fill: var(--risk-limited); }
+.risk-band[data-tier="minimal"] { fill: var(--risk-minimal); }
+.risk-band.active { opacity: 1; }
+
+.risk-marker { transition: transform 0.4s ease; }
+.risk-marker-dot {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 3;
+}
+.risk-marker-halo {
+  fill: var(--ink);
+  opacity: 0.18;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: risk-pulse 1.8s ease-out infinite;
+}
+@keyframes risk-pulse {
+  0% { transform: scale(0.6); opacity: 0.35; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .risk-marker-halo { animation: none; }
+  .risk-marker { transition: none; }
+}
+
+.risk-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.risk-legend li {
+  height: var(--band-h);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12px;
+  border-left: 3px solid transparent;
+  opacity: 0.55;
+  position: relative;
+}
+.risk-legend li.active {
+  opacity: 1;
+  border-left-color: var(--tier-color);
+}
+
+.risk-legend-name { font-weight: 600; font-size: 14px; color: var(--ink); }
+.risk-legend li.active .risk-legend-name { color: var(--tier-color); }
+.risk-legend-desc { font-size: 12px; color: var(--ink-soft); line-height: 1.3; }
+
+.risk-here { display: none; }
+.risk-legend li.active .risk-here {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 3px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--surface);
+  background: var(--tier-color);
+  padding: 1px 7px;
+  border-radius: 3px;
+}
+
+.risk-subhead {
+  margin: 14px 0 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.risk-matches, .risk-obligations, .risk-notes {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+}
+.risk-matches { list-style: none; padding-left: 0; }
+.risk-matches li { margin-bottom: 6px; }
+.risk-matches .tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--tier-color);
+  border: 1px solid var(--tier-color);
+  padding: 1px 7px;
+  margin-right: 8px;
+}
+.risk-obligations li { margin-bottom: 5px; }
+.risk-notes {
+  margin-top: 12px;
+  list-style: none;
+  padding-left: 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.risk-notes li { margin-bottom: 4px; }
+
+/* Σε στενές οθόνες μένει μόνο το όνομα κάθε βαθμίδας, ώστε να χωράει
+   στο ύψος της ζώνης· η ενεργή γραμμή ξεχωρίζει από το χρώμα και τον δείκτη */
+@media (max-width: 520px) {
+  :root { --band-h: 48px; }
+  .risk-pyramid-wrap { gap: 10px; }
+  .risk-legend li { padding-left: 9px; }
+  .risk-legend-name { font-size: 13px; line-height: 1.25; }
+  .risk-legend-desc,
+  .risk-legend li.active .risk-here { display: none; }
+}
+
+/* ---------- Footer (Υποσέλιδο) ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--mist);
+  padding: 20px 32px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+/* ---------- Ένδειξη φόρτωσης όσο εκτελείται η ανάλυση ---------- */
+.loading-indicator[hidden] {
+  display: none;
+}
+
+.loading-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 20px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 3px solid var(--mist);
+  border-top-color: var(--aegean);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- Εργαλειοθήκη αναφοράς: ιστορικό, αντιγραφή, εκτύπωση ---------- */
+.report-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.toolbar-btn {
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--aegean);
+  background: var(--aegean-dim);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover { background: var(--mist); }
+
+.history-wrap { position: relative; }
+
+.history-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 20;
+  width: min(360px, 80vw);
+  max-height: 320px;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--mist);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 6px;
+}
+
+.history-panel ul { list-style: none; margin: 0; padding: 0; }
+
+.history-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.history-item:hover { background: var(--aegean-dim); }
+
+.history-item-dilemma {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-item-meta {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.history-empty-note {
+  padding: 10px;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+/* ---------- Ράβδος βαθμολογίας δίπλα σε κάθε ανιχνευμένη διάσταση ---------- */
+.dimension-score-bar {
+  display: inline-block;
+  width: 60px;
+  height: 6px;
+  background: var(--mist);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.dimension-score-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--aegean);
+  border-radius: 3px;
+}
+
+/* ---------- Κουμπί φωτεινού / σκούρου θέματος ---------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 32px;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px solid var(--mist);
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.theme-toggle:hover { color: var(--ink); background: var(--aegean-dim); }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* ---------- Εικονίδιο πληροφοριών δίπλα στους τίτλους ενοτήτων ----------
+   Περιγραμμένο (όχι γεμάτο) ώστε να μη μπερδεύεται με τους γεμάτους
+   κύκλους αρίθμησης· γεμίζει όταν είναι ανοιχτό. */
+.info-wrap {
+  position: relative;
+  display: inline-flex;
+  align-self: center;
+  margin-left: -4px;
+}
+.info-btn {
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid var(--aegean);
+  background: transparent;
+  color: var(--aegean);
+  font-family: var(--serif);
+  font-size: 11.5px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: help;
+}
+.info-btn:hover,
+.info-btn[aria-expanded="true"] {
+  background: var(--aegean);
+  color: var(--surface);
+}
+.info-tip {
+  display: none;
+  position: absolute;
+  top: calc(100% + 9px);
+  left: -12px;
+  z-index: 30;
+  width: min(300px, calc(100vw - 32px));
+  padding: 10px 12px;
+  background: var(--ink);
+  color: var(--surface);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+.info-tip::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: var(--arrow-left, 16px);
+  width: 10px;
+  height: 10px;
+  background: var(--ink);
+  transform: rotate(45deg);
+}
+.info-tip.open,
+.info-btn:focus-visible + .info-tip { display: block; }
+@media (hover: hover) {
+  .info-wrap:hover .info-tip { display: block; }
+}
+
+/* ---------- Εκτύπωση / Αποθήκευση ως PDF: μόνο η ίδια η αναφορά ---------- */
+@media print {
+  .masthead, .panel-input, .site-footer, .report-toolbar, .loading-indicator,
+  .info-wrap, .theme-toggle {
+    display: none !important;
+  }
+  /* Η εκτύπωση βγαίνει πάντα με το φωτεινό θέμα, ό,τι κι αν βλέπει ο χρήστης */
+  :root[data-theme="dark"] {
+    --ink: #16213A; --ink-soft: #4B5768; --paper: #FAFAF7; --surface: #FFFFFF;
+    --aegean: #2C6E8C; --aegean-dim: #E7EEF1; --rust: #A34E37; --rust-dim: #F5E9E5; --mist: #E1E6EA;
+    --risk-unacceptable: #B42318; --risk-high: #C2570C; --risk-limited: #A87B00; --risk-minimal: #2E7D4F;
+  }
+  .risk-band, .risk-legend li { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .risk-marker-halo { display: none; }
+  .layout { display: block; }
+  .panel-report { box-shadow: none; padding: 0; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 10px; }
+}

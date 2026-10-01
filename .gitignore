@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+saved_model/
+.idea/
+data/usage_log.jsonl
+data/usage_log_reviewed.jsonl
+data/augmentation_candidates.jsonl
+data/augmentation_reviewed.jsonl
+.claude/

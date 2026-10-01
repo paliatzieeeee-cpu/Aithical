@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">AI-thical — AI ethics &amp; compliance advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script>
+  // Εφαρμογή του θέματος πριν σχεδιαστεί η σελίδα, ώστε να μην εμφανίζεται
+  // στιγμιαία το φωτεινό θέμα σε όσους έχουν επιλέξει σκούρο.
+  (function () {
+    var dark = false;
+    try {
+      var saved = localStorage.getItem("aithical-theme");
+      dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    } catch (e) {}
+    if (dark) document.documentElement.setAttribute("data-theme", "dark");
+  })();
+</script>
+</head>
+<body>
+
+<!-- Ρυθμίσεις backend (πάροχος LLM κ.λπ.) ενσωματωμένες στη σελίδα, ώστε το i18n.js να τις διαβάζει χωρίς επιπλέον αίτημα -->
+<script id="app-config" type="application/json">{"usingFallbackClassifier": {{ using_fallback_classifier|tojson }}, "llmProviderIsLocal": {{ llm_provider_is_local|tojson }}, "llmProviderConfigured": {{ llm_provider_configured|tojson }}}</script>
+
+<!-- Κεφαλίδα: λογότυπο, τίτλος και εναλλαγή γλώσσας πάνω δεξιά -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="wordmark">
+      <span class="wordmark-mark">αἴ</span>
+      <div class="wordmark-text">
+        <span class="wordmark-title" id="wordmark-title">AI-thical</span>
+        <span class="wordmark-sub" id="wordmark-sub">AI ethics &amp; compliance advisory</span>
+      </div>
+    </div>
+    <div class="masthead-right">
+      <p class="masthead-note" id="masthead-note">Prototype research tool &middot; not legal advice</p>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" id="lang-btn-en" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" id="lang-btn-el" data-lang="el">ΕΛ</button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" fill="currentColor"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- Αριστερό πλαίσιο: φόρμα περιγραφής διλήμματος και επιλογών -->
+  <section class="panel-input" aria-label="Describe your dilemma">
+    <h1 id="panel-h1">Describe the situation</h1>
+    <p class="lede" id="panel-lede">
+      Tell us what your team is trying to do with AI, and where the uncertainty lies.
+      Add the country and business function so the advisory can narrow its sources.
+    </p>
+
+    <form id="dilemma-form" novalidate>
+      <label for="dilemma" id="dilemma-label">Business dilemma</label>
+      <textarea
+        id="dilemma"
+        name="dilemma"
+        rows="7"
+        maxlength="2000"
+        required></textarea>
+      <span class="char-count"><span id="char-count">0</span> / 2000</span>
+
+      <!-- Επιλογή περιοχής (ΕΕ / ΗΠΑ / Γενικά), και υποδοχής επιλογής συγκεκριμένης χώρας ή πολιτείας· η τιμή (value) παραμένει πάντα στα Αγγλικά για να ταιριάζει με τη βάση γνώσης, ενώ το ορατό κείμενο αλλάζει γλώσσα μέσω των data-en/data-el -->
+      <div class="field-row">
+        <div class="field">
+          <label for="region" id="region-label">Region</label>
+          <select id="region">
+            <option value="European Union" data-en="European Union" data-el="Ευρωπαϊκή Ένωση">European Union</option>
+            <option value="United States" data-en="United States" data-el="Ηνωμένες Πολιτείες">United States</option>
+            <option value="General / Other" data-en="General / Other" data-el="Γενικά / Άλλο">General / Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sector" id="sector-label">Business function</label>
+          <select id="sector" name="sector">
+            {% for s in sectors %}
+            <option value="{{ s }}" data-en="{{ sector_labels[s]['en'] }}" data-el="{{ sector_labels[s]['el'] }}">{{ sector_labels[s]['en'] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+
+      <div class="field sub-select-field" id="eu-country-field">
+        <label for="eu-country" id="eu-country-label">Country</label>
+        <select id="eu-country">
+          {% for c in eu_countries %}
+          <option value="{{ c }}" data-en="{{ country_labels[c]['en'] }}" data-el="{{ country_labels[c]['el'] }}" {% if c == "Greece" %}selected{% endif %}>{{ country_labels[c]['en'] }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="field sub-select-field" id="us-state-field" hidden>
+        <label for="us-state" id="us-state-label">State</label>
+        <select id="us-state">
+          {% for s in us_states %}
+          <option value="{{ s }}" data-en="{{ country_labels[s]['en'] }}" data-el="{{ country_labels[s]['el'] }}">{{ country_labels[s]['en'] }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <!-- Προαιρετικό πλαίσιο: σύνοψη φυσικής γλώσσας μέσω LLM -->
+      <label class="checkbox-row" for="generate-narrative">
+        <input type="checkbox" id="generate-narrative" name="generate_narrative">
+        <span>
+          <span id="narrative-checkbox-label">Also write a natural-language summary using an AI model.</span>
+          <span class="checkbox-note" id="narrative-checkbox-note"></span>
+        </span>
+      </label>
+
+      <!-- Προαιρετικό πλαίσιο: ζωντανή αναζήτηση πρόσφατων πηγών -->
+      <label class="checkbox-row" for="live-sources">
+        <input type="checkbox" id="live-sources" name="include_live_sources">
+        <span>
+          <span id="live-sources-checkbox-label">Also search the web for recent, unverified sources.</span>
+          <span class="checkbox-note" id="live-sources-checkbox-note"></span>
+        </span>
+      </label>
+
+      <button type="submit" id="submit-btn">Get advisory report</button>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+    </form>
+  </section>
+
+  <!-- Δεξί πλαίσιο: κενή κατάσταση ή δομημένη αναφορά συμβουλευτικής -->
+  <section class="panel-report" aria-label="Advisory report" id="panel-report">
+    <!-- Ένδειξη φόρτωσης όσο εκτελείται η ανάλυση (ταξινόμηση + προαιρετικό LLM/ζωντανή αναζήτηση) -->
+    <div class="loading-indicator" id="loading-indicator" hidden>
+      <div class="spinner" aria-hidden="true"></div>
+      <p id="loading-text">Analyzing your dilemma…</p>
+    </div>
+
+    <div class="report-empty" id="report-empty">
+      <p id="report-empty-1">Your advisory report will appear here once you submit a dilemma.</p>
+      <p class="report-empty-detail" id="report-empty-2">
+        It will name the ethical dimensions detected in your description, then
+        list matching principles, regulatory considerations and recommended actions.
+      </p>
+    </div>
+
+    <div class="report" id="report" hidden>
+      <!-- Κεφαλίδα αναφοράς: χώρα/κλάδος, εργαλειοθήκη ιστορικού/εξαγωγής, και το ίδιο το δίλημμα -->
+      <div class="report-header">
+        <div class="report-header-top">
+          <p class="report-eyebrow" id="report-context"></p>
+          <div class="report-toolbar">
+            <div class="history-wrap">
+              <button type="button" class="toolbar-btn" id="history-btn" aria-haspopup="true" aria-expanded="false">
+                <span id="history-btn-label">History</span> (<span id="history-count">0</span>)
+              </button>
+              <div class="history-panel" id="history-panel" hidden>
+                <ul id="history-list"></ul>
+              </div>
+            </div>
+            <button type="button" class="toolbar-btn" id="copy-btn"><span id="copy-btn-label">Copy</span></button>
+            <button type="button" class="toolbar-btn" id="print-btn"><span id="print-btn-label">Print / Save as PDF</span></button>
+          </div>
+        </div>
+        <blockquote class="report-dilemma" id="report-dilemma"></blockquote>
+      </div>
+
+      <!-- Σύνοψη από LLM (εμφανίζεται μόνο εφόσον ζητήθηκε και πέτυχε) -->
+      <div class="narrative-block" id="narrative-block" hidden>
+        <p class="narrative-label"><span id="narrative-label-text">AI-drafted summary</span> <span id="narrative-label-note">generated from the sources below — verify against them</span></p>
+        <p id="narrative-text"></p>
+      </div>
+      <p class="narrative-error" id="narrative-error" hidden></p>
+
+      <!-- Ενότητα 1: εντοπισμένες ηθικές διαστάσεις -->
+      <section class="report-section" id="section-dimensions">
+        <h2><span class="section-number">1</span><span id="section-1-title">Ethical dimensions detected</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-dimensions" aria-label="About this section" data-tip-key="dimensions"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-dimensions" role="tooltip"></span></span></h2>
+        <p class="llm-assist-note" id="llm-assist-note" hidden></p>
+        <ul class="dimension-list" id="dimension-list"></ul>
+      </section>
+
+      <!-- Ενότητα 2: βαθμίδα κινδύνου κατά την πυραμίδα του Κανονισμού ΤΝ της ΕΕ, με δείκτη στη θέση της περίπτωσης -->
+      <section class="report-section" id="section-risk">
+        <h2><span class="section-number">2</span><span id="section-risk-title">EU AI Act risk level</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-risk" aria-label="About this section" data-tip-key="risk"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-risk" role="tooltip"></span></span></h2>
+        <p class="risk-verdict" id="risk-verdict"></p>
+        <div class="risk-pyramid-wrap">
+          <svg class="risk-pyramid" id="risk-pyramid" viewBox="0 0 200 240" role="img" aria-labelledby="risk-verdict">
+            <polygon class="risk-band" data-tier="unacceptable" points="100,0 125,60 75,60"/>
+            <polygon class="risk-band" data-tier="high" points="75,60 125,60 150,120 50,120"/>
+            <polygon class="risk-band" data-tier="limited" points="50,120 150,120 175,180 25,180"/>
+            <polygon class="risk-band" data-tier="minimal" points="25,180 175,180 200,240 0,240"/>
+            <g class="risk-marker" id="risk-marker">
+              <circle class="risk-marker-halo" r="12"/>
+              <circle class="risk-marker-dot" r="6"/>
+            </g>
+          </svg>
+          <ol class="risk-legend" id="risk-legend">
+            <li data-tier="unacceptable"><span class="risk-legend-name" data-label="unacceptable"></span><span class="risk-legend-desc" data-desc="unacceptable"></span><span class="risk-here"></span></li>
+            <li data-tier="high"><span class="risk-legend-name" data-label="high"></span><span class="risk-legend-desc" data-desc="high"></span><span class="risk-here"></span></li>
+            <li data-tier="limited"><span class="risk-legend-name" data-label="limited"></span><span class="risk-legend-desc" data-desc="limited"></span><span class="risk-here"></span></li>
+            <li data-tier="minimal"><span class="risk-legend-name" data-label="minimal"></span><span class="risk-legend-desc" data-desc="minimal"></span><span class="risk-here"></span></li>
+          </ol>
+        </div>
+        <div class="risk-details">
+          <p class="risk-subhead" id="risk-matches-title" hidden>Why</p>
+          <ul class="risk-matches" id="risk-matches"></ul>
+          <p class="risk-subhead" id="risk-obligations-title">Key obligations</p>
+          <ul class="risk-obligations" id="risk-obligations"></ul>
+          <ul class="risk-notes" id="risk-notes"></ul>
+        </div>
+      </section>
+
+      <!-- Ενότητα 3: σχετικές αρχές -->
+      <section class="report-section" id="section-principles">
+        <h2><span class="section-number">3</span><span id="section-2-title">Relevant principles</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-principles" aria-label="About this section" data-tip-key="principles"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-principles" role="tooltip"></span></span></h2>
+        <ul class="source-list" id="principles-list"></ul>
+      </section>
+
+      <!-- Πρόσθετη ενότητα: σημασιολογική αναζήτηση σε ευρύτερη βιβλιογραφία (RAG) -->
+      <section class="report-section" id="section-bibliography" hidden>
+        <h2><span class="section-number">·</span><span id="section-biblio-title">Further literature (semantic match)</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-biblio" aria-label="About this section" data-tip-key="biblio"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-biblio" role="tooltip"></span></span></h2>
+        <p class="biblio-note" id="biblio-note">Matched by meaning across a wider bibliography, not filtered by country or sector like the principles above.</p>
+        <ul class="source-list" id="bibliography-list"></ul>
+      </section>
+
+      <!-- Ενότητα 4: κανονιστικά ζητήματα, με νομικές παραπομπές -->
+      <section class="report-section" id="section-regulations">
+        <h2><span class="section-number">4</span><span id="section-3-title">Regulatory considerations</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-regulations" aria-label="About this section" data-tip-key="regulations"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-regulations" role="tooltip"></span></span></h2>
+        <ul class="source-list" id="regulations-list"></ul>
+      </section>
+
+      <!-- Ενότητα 5: προτεινόμενα επόμενα βήματα -->
+      <section class="report-section" id="section-actions">
+        <h2><span class="section-number">5</span><span id="section-4-title">Recommended next steps</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-actions" aria-label="About this section" data-tip-key="actions"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-actions" role="tooltip"></span></span></h2>
+        <ul class="source-list" id="actions-list"></ul>
+      </section>
+
+      <!-- Πρόσθετη ενότητα: ζωντανές, μη επαληθευμένες πηγές (προαιρετική, οπτικά ξεχωριστή) -->
+      <section class="report-section" id="section-live-sources" hidden>
+        <h2><span class="section-number">·</span><span id="section-live-title">Recent sources (live, unverified)</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-live" aria-label="About this section" data-tip-key="live"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-live" role="tooltip"></span></span></h2>
+        <p class="live-sources-note" id="live-sources-note">These come from a live web search and are not reviewed — verify before relying on them.</p>
+        <ul class="source-list" id="live-sources-list"></ul>
+        <p class="live-sources-error" id="live-sources-error" hidden></p>
+      </section>
+
+      <!-- Ενότητα 6: αποποίηση ευθύνης -->
+      <section class="report-section report-disclaimer">
+        <h2><span class="section-number">6</span><span id="section-5-title">Limits of this report</span><span class="info-wrap"><button type="button" class="info-btn" aria-expanded="false" aria-controls="tip-limits" aria-label="About this section" data-tip-key="limits"><span aria-hidden="true">i</span></button><span class="info-tip" id="tip-limits" role="tooltip"></span></span></h2>
+        <p id="report-disclaimer"></p>
+      </section>
+    </div>
+  </section>
+
+</main>
+
+<!-- Υποσέλιδο με αναφορά στη διατριβή -->
+<footer class="site-footer">
+  <p id="site-footer-text">Ethical prototype &mdash; built for the MSc thesis "Aithical: The AI Consulting LLM for Ethical and Legal issues about AI".</p>
+</footer>
+
+<!-- Το i18n.js πρέπει να φορτωθεί πριν το main.js, καθώς το main.js χρησιμοποιεί τις συναρτήσεις/μεταβλητές του -->
+<script src="{{ url_for('static', filename='js/i18n.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

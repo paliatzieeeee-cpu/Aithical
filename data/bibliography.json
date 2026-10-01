@@ -1,0 +1,184 @@
+{
+  "entries": [
+    {
+      "id": "mittelstadt-2019",
+      "citation": "Mittelstadt, B. (2019). Principles alone cannot guarantee ethical AI. Nature Machine Intelligence, 1, 501–507.",
+      "url": "https://doi.org/10.1038/s42256-019-0114-4",
+      "summary": {
+        "en": "Argues that AI ethics principles, unlike medical ethics, lack a shared professional history, accountability structures, and enforcement mechanisms, so voluntary high-level principles alone are unlikely to reliably change how AI is actually built or deployed.",
+        "el": "Υποστηρίζει ότι οι αρχές ηθικής της ΑΙ, σε αντίθεση με την ιατρική δεοντολογία, στερούνται κοινής επαγγελματικής παράδοσης, δομών λογοδοσίας και μηχανισμών επιβολής, οπότε μόνες τους δεν αναμένεται να αλλάξουν αξιόπιστα το πώς σχεδιάζεται ή αναπτύσσεται η ΑΙ στην πράξη."
+      }
+    },
+    {
+      "id": "hagendorff-2020",
+      "citation": "Hagendorff, T. (2020). The Ethics of AI Ethics: An Evaluation of Guidelines. Minds and Machines, 30(1), 99–120.",
+      "url": "https://doi.org/10.1007/s11023-020-09517-8",
+      "summary": {
+        "en": "A critical review of numerous published AI ethics guidelines finding that most are non-binding, rarely paired with concrete evaluation criteria, and have limited demonstrated effect on developers' actual behavior — pointing to a persistent gap between stated principles and practice.",
+        "el": "Μια κριτική επισκόπηση πολυάριθμων δημοσιευμένων κατευθυντήριων οδηγιών ηθικής ΑΙ διαπιστώνει ότι οι περισσότερες δεν είναι δεσμευτικές, σπάνια συνοδεύονται από συγκεκριμένα κριτήρια αξιολόγησης, και έχουν περιορισμένη αποδεδειγμένη επίδραση στην πραγματική συμπεριφορά των προγραμματιστών — αναδεικνύοντας ένα διαρκές χάσμα ανάμεσα σε δηλωμένες αρχές και πράξη."
+      }
+    },
+    {
+      "id": "fjeld-2020",
+      "citation": "Fjeld, J., Achten, N., Hilligoss, H., Nagy, A., & Srikumar, M. (2020). Principled Artificial Intelligence. Berkman Klein Center for Internet & Society.",
+      "url": "https://dash.harvard.edu/entities/publication/739ea327-7c95-43d9-9fdc-a702bf420e40",
+      "summary": {
+        "en": "Compares 36 prominent AI ethics documents side by side and identifies eight recurring themes — privacy, accountability, safety, transparency, fairness, human control, professional responsibility, and promotion of human values — showing broad convergence at the level of themes despite differences in interpretation.",
+        "el": "Συγκρίνει 36 σημαντικά έγγραφα ηθικής ΑΙ και εντοπίζει οκτώ επαναλαμβανόμενα θέματα — ιδιωτικότητα, λογοδοσία, ασφάλεια, διαφάνεια, δικαιοσύνη, ανθρώπινο έλεγχο, επαγγελματική ευθύνη και προαγωγή ανθρώπινων αξιών — δείχνοντας ευρεία σύγκλιση σε επίπεδο θεμάτων παρά τις διαφορές ερμηνείας."
+      }
+    },
+    {
+      "id": "floridi-cowls-2019",
+      "citation": "Floridi, L., & Cowls, J. (2019). A Unified Framework of Five Principles for AI in Society. Harvard Data Science Review, 1(1).",
+      "url": "https://doi.org/10.1162/99608f92.8cd550d1",
+      "summary": {
+        "en": "Synthesizes multiple ethics frameworks into five core principles for AI — beneficence, non-maleficence, autonomy, and justice (drawn from bioethics), plus a fifth, explicability — arguing this last principle is essential for accountability and public trust.",
+        "el": "Συνθέτει πολλαπλά πλαίσια ηθικής σε πέντε βασικές αρχές για την ΑΙ — ευεργεσία, αποφυγή βλάβης, αυτονομία και δικαιοσύνη (από τη βιοηθική), συν μία πέμπτη, την επεξηγησιμότητα — υποστηρίζοντας ότι η τελευταία είναι απαραίτητη για τη λογοδοσία και την κοινωνική εμπιστοσύνη."
+      }
+    },
+    {
+      "id": "whittlestone-2019",
+      "citation": "Whittlestone, J., Nyrup, R., Alexandrova, A., & Cave, S. (2019). The Role and Limits of Principles in AI Ethics: Towards a Focus on Tensions. AIES '19: Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society.",
+      "url": "https://doi.org/10.1145/3306618.3314289",
+      "summary": {
+        "en": "Argues that high-level AI ethics principles like fairness or privacy inevitably conflict in practice, and that the field should shift its focus toward explicitly identifying and resolving these tensions rather than treating principles as an end point. Proposes four recurring tensions, such as improving predictive accuracy versus ensuring equal treatment, as concrete starting points for this work.",
+        "el": "Υποστηρίζει ότι οι υψηλού επιπέδου αρχές ηθικής ΑΙ, όπως η δικαιοσύνη ή η ιδιωτικότητα, έρχονται αναπόφευκτα σε σύγκρουση στην πράξη, και ότι ο κλάδος θα πρέπει να επικεντρωθεί στον ρητό εντοπισμό και την επίλυση αυτών των εντάσεων αντί να αντιμετωπίζει τις αρχές ως τελικό στόχο. Προτείνει τέσσερις επαναλαμβανόμενες εντάσεις, όπως η βελτίωση της προγνωστικής ακρίβειας έναντι της διασφάλισης ίσης μεταχείρισης, ως συγκεκριμένα σημεία εκκίνησης."
+      }
+    },
+    {
+      "id": "morley-2021-eaas",
+      "citation": "Morley, J., Elhalal, A., Garcia, F., Kinsey, L., Mökander, J., & Floridi, L. (2021). Ethics as a Service: A Pragmatic Operationalisation of AI Ethics. Minds and Machines, 31(2), 239–256.",
+      "url": "https://doi.org/10.1007/s11023-021-09563-w",
+      "summary": {
+        "en": "Proposes \"Ethics as a Service,\" a governance model in which responsibility for AI ethics is distributed between an independent multi-disciplinary ethics board and the internal practitioners building the system, rather than resting entirely with one side. Draws an analogy with cloud-computing service models to argue this middle path avoids both overly rigid, externally imposed rules and unsupervised self-regulation.",
+        "el": "Προτείνει το μοντέλο «Ηθική ως Υπηρεσία» (Ethics as a Service), στο οποίο η ευθύνη για την ηθική της ΑΙ κατανέμεται μεταξύ μιας ανεξάρτητης, διεπιστημονικής επιτροπής ηθικής και των εσωτερικών επαγγελματιών που αναπτύσσουν το σύστημα, αντί να βαρύνει αποκλειστικά τη μία πλευρά. Χρησιμοποιεί ως αναλογία τα μοντέλα υπηρεσιών υπολογιστικού νέφους για να δείξει ότι αυτός ο ενδιάμεσος δρόμος αποφεύγει τόσο τους άκαμπτους εξωτερικούς κανόνες όσο και την ανεπιτήρητη αυτορρύθμιση."
+      }
+    },
+    {
+      "id": "morley-2021-barriers",
+      "citation": "Morley, J., Kinsey, L., Elhalal, A., Garcia, F., Ziosi, M., & Floridi, L. (2021). Operationalising AI ethics: barriers, enablers and next steps. AI & Society, 38, 411–423.",
+      "url": "https://doi.org/10.1007/s00146-021-01308-8",
+      "summary": {
+        "en": "Reports survey and interview findings showing that AI practitioners largely equate \"ethical AI\" with avoiding bias and complying with data protection law, while broader goals like fairness or autonomy are rarely prioritised without a clear business case. Finds a persistent gap between the ethical resources practitioners have access to and those they say they would actually find useful, such as ethical design specifications and case studies.",
+        "el": "Παρουσιάζει ευρήματα έρευνας και συνεντεύξεων που δείχνουν ότι οι επαγγελματίες ΑΙ ταυτίζουν σε μεγάλο βαθμό την «ηθική ΑΙ» με την αποφυγή μεροληψίας και τη συμμόρφωση με τη νομοθεσία προστασίας δεδομένων, ενώ ευρύτεροι στόχοι όπως η δικαιοσύνη ή η αυτονομία σπάνια τίθενται σε προτεραιότητα χωρίς σαφή επιχειρηματικό λόγο. Εντοπίζει διαρκές χάσμα ανάμεσα στους πόρους που έχουν οι επαγγελματίες και σε αυτούς που θα έβρισκαν πραγματικά χρήσιμους."
+      }
+    },
+    {
+      "id": "kazim-koshiyama-2021",
+      "citation": "Kazim, E., & Koshiyama, A. S. (2021). A high-level overview of AI ethics. Patterns, 2(9), 100314.",
+      "url": "https://doi.org/10.1016/j.patter.2021.100314",
+      "summary": {
+        "en": "Offers a broad, interdisciplinary map of the AI ethics field, tracing its roots in engineering ethics, philosophy of technology, and science and technology studies, and organising practical themes into six areas: human well-being, safety, privacy, transparency, fairness, and accountability. Distinguishes a principles-based approach from ethical-by-design processes and a cultural \"ethical consciousness\" approach, arguing all three are needed together.",
+        "el": "Προσφέρει έναν ευρύ, διεπιστημονικό χάρτη του πεδίου της ηθικής ΑΙ, εντοπίζοντας τις ρίζες του στη μηχανική δεοντολογία, τη φιλοσοφία της τεχνολογίας και τις σπουδές επιστήμης και τεχνολογίας, οργανώνοντας τα πρακτικά θέματα σε έξι άξονες: ανθρώπινη ευημερία, ασφάλεια, ιδιωτικότητα, διαφάνεια, δικαιοσύνη και λογοδοσία. Διακρίνει την προσέγγιση βάσει αρχών από τις διαδικασίες «ηθικού σχεδιασμού εξ ορισμού» και από μια πολιτισμική προσέγγιση «ηθικής συνείδησης»."
+      }
+    },
+    {
+      "id": "siau-wang-2020",
+      "citation": "Siau, K., & Wang, W. (2020). Artificial Intelligence (AI) Ethics: Ethics of AI and Ethical AI. Journal of Database Management, 31(2), 74–87.",
+      "url": "https://doi.org/10.4018/JDM.2020040105",
+      "summary": {
+        "en": "Distinguishes \"ethics of AI\" (the principles, rules, and regulations that should govern AI) from \"ethical AI\" (AI systems that actually behave ethically), and surveys eight institutional frameworks to identify recurring factors such as accountability, privacy, and transparency. Reviews concrete sources of ethical risk in AI systems, including opaque \"black box\" decision-making, data privacy, inherited human bias, and unclear accountability when something goes wrong.",
+        "el": "Διακρίνει την «ηθική της ΑΙ» (τις αρχές και τους κανονισμούς που πρέπει να διέπουν την ΑΙ) από την «ηθική ΑΙ» (συστήματα ΑΙ που όντως συμπεριφέρονται ηθικά), και εξετάζει οκτώ θεσμικά πλαίσια για να εντοπίσει παράγοντες όπως η λογοδοσία, η ιδιωτικότητα και η διαφάνεια. Επισκοπεί πηγές ηθικού κινδύνου όπως η αδιαφανής λήψη αποφάσεων τύπου «μαύρο κουτί», η κληρονομημένη ανθρώπινη μεροληψία, και η ασαφής λογοδοσία όταν κάτι πάει στραβά."
+      }
+    },
+    {
+      "id": "floridi-2018-ai4people",
+      "citation": "Floridi, L., Cowls, J., Beltrametti, M., Chatila, R., Chazerand, P., Dignum, V., Luetge, C., Madelin, R., Pagallo, U., Rossi, F., Schafer, B., Valcke, P., & Vayena, E. (2018). AI4People—An Ethical Framework for a Good AI Society: Opportunities, Risks, Principles, and Recommendations. Minds and Machines, 28(4), 689–707.",
+      "url": "https://doi.org/10.1007/s11023-018-9482-5",
+      "summary": {
+        "en": "Synthesises 47 principles from six major AI ethics documents into five core principles for AI in society: the four classic bioethics principles (beneficence, non-maleficence, autonomy, justice) plus a new fifth principle, explicability, covering both intelligibility and accountability. Offers 20 concrete recommendations for policymakers and organisations, grouped into assessment, development, incentivisation, and support actions.",
+        "el": "Συνθέτει 47 αρχές από έξι σημαντικά έγγραφα ηθικής ΑΙ σε πέντε βασικές αρχές για την ΑΙ στην κοινωνία: τις τέσσερις κλασικές αρχές της βιοηθικής (ευεργεσία, αποφυγή βλάβης, αυτονομία, δικαιοσύνη) συν μία νέα, πέμπτη αρχή, την επεξηγησιμότητα, που καλύπτει τόσο την κατανοησιμότητα όσο και τη λογοδοσία. Προτείνει 20 συστάσεις για υπεύθυνους χάραξης πολιτικής και οργανισμούς."
+      }
+    },
+    {
+      "id": "floridi-2021-end-of-era",
+      "citation": "Floridi, L. (2021). The End of an Era: from Self-Regulation to Hard Law for the Digital Industry. Philosophy & Technology, 34, 619–622.",
+      "url": "https://doi.org/10.1007/s13347-021-00493-0",
+      "summary": {
+        "en": "Argues that the long period in which the digital industry was largely left to self-regulate on ethical issues such as privacy, bias, and disinformation is ending, as governments increasingly move toward binding legislation (e.g. GDPR, the EU AI Act) rather than voluntary codes of conduct. Frames this shift from soft ethics to hard law as a natural and overdue maturation of digital governance, not a failure of ethics itself.",
+        "el": "Υποστηρίζει ότι η μακρά περίοδος κατά την οποία ο ψηφιακός κλάδος αυτορρυθμιζόταν σε μεγάλο βαθμό σε ζητήματα όπως η ιδιωτικότητα, η μεροληψία και η παραπληροφόρηση φτάνει στο τέλος της, καθώς οι κυβερνήσεις στρέφονται προς δεσμευτική νομοθεσία (π.χ. ΓΚΠΔ, EU AI Act) αντί για εθελοντικούς κώδικες δεοντολογίας. Παρουσιάζει αυτή τη μετάβαση από «ήπια ηθική» σε «σκληρό δίκαιο» ως φυσική και καθυστερημένη ωρίμανση της ψηφιακής διακυβέρνησης."
+      }
+    },
+    {
+      "id": "floridi-2025-agency",
+      "citation": "Floridi, L. (2025). AI as Agency without Intelligence: On Artificial Intelligence as a New Form of Artificial Agency and the Multiple Realisability of Agency Thesis. Philosophy & Technology, 38, 30.",
+      "url": "https://doi.org/10.1007/s13347-025-00858-9",
+      "summary": {
+        "en": "Argues that AI is best understood not as a form of intelligence but as a new kind of agency that does not require cognition, intention, or mental states — a position termed the \"Multiple Realisability of Agency\" thesis. Suggests this reframing avoids misleading comparisons between AI and human or animal intelligence, and better clarifies what AI can and cannot be held responsible for.",
+        "el": "Υποστηρίζει ότι η ΑΙ κατανοείται καλύτερα όχι ως μορφή νοημοσύνης αλλά ως ένα νέο είδος πρακτορίας (agency) που δεν απαιτεί γνώση, πρόθεση ή νοητικές καταστάσεις — μια θέση που ονομάζεται «Πολλαπλή Πραγματωσιμότητα της Πρακτορίας». Προτείνει ότι αυτή η επαναπλαισίωση αποφεύγει παραπλανητικές συγκρίσεις ανάμεσα στην ΑΙ και την ανθρώπινη ή ζωική νοημοσύνη, και αποσαφηνίζει καλύτερα για τι μπορεί ή δεν μπορεί να θεωρηθεί υπεύθυνη η ΑΙ."
+      }
+    },
+    {
+      "id": "heilinger-2022",
+      "citation": "Heilinger, J.-C. (2022). The Ethics of AI Ethics. A Constructive Critique. Philosophy & Technology, 35(3), 1–20.",
+      "url": "https://doi.org/10.1007/s13347-022-00557-9",
+      "summary": {
+        "en": "Critically examines current AI ethics practice, identifying conceptual, substantive, and procedural weaknesses such as treating AI ethics as a narrow, isolated field rather than as part of everyday infrastructure, and neglecting deeper structural injustices. Proposes making AI ethics processes more inclusive and better informed as a constructive way forward, rather than abandoning the field altogether.",
+        "el": "Εξετάζει κριτικά την τρέχουσα πρακτική της ηθικής ΑΙ, εντοπίζοντας εννοιολογικές, ουσιαστικές και διαδικαστικές αδυναμίες, όπως η αντιμετώπισή της ως στενού, απομονωμένου πεδίου αντί ως μέρους της καθημερινής υποδομής, και η παραμέληση βαθύτερων δομικών αδικιών. Προτείνει να γίνουν οι διαδικασίες ηθικής ΑΙ πιο συμπεριληπτικές και καλύτερα ενημερωμένες, αντί να εγκαταλειφθεί εντελώς το πεδίο."
+      }
+    },
+    {
+      "id": "borenstein-howard-2020",
+      "citation": "Borenstein, J., & Howard, A. (2021). Emerging challenges in AI and the need for AI ethics education. AI and Ethics, 1, 61–65.",
+      "url": "https://doi.org/10.1007/s43681-020-00002-7",
+      "summary": {
+        "en": "Argues that as AI becomes embedded in more areas of life, it is urgent to build AI ethics more systematically into the education of future developers, designers, and other professionals rather than treating it as an afterthought. Offers recommendations for AI ethics pedagogy aimed at helping future practitioners reflect on their responsibilities and anticipate potential harms before deployment.",
+        "el": "Υποστηρίζει ότι καθώς η ΑΙ ενσωματώνεται σε όλο και περισσότερους τομείς της ζωής, είναι επείγον να ενταχθεί η ηθική ΑΙ πιο συστηματικά στην εκπαίδευση μελλοντικών προγραμματιστών, σχεδιαστών και άλλων επαγγελματιών, αντί να αντιμετωπίζεται ως δευτερεύον θέμα. Προτείνει συστάσεις για την παιδαγωγική της ηθικής ΑΙ, ώστε οι μελλοντικοί επαγγελματίες να αναστοχάζονται τις ευθύνες τους και να προβλέπουν πιθανές βλάβες πριν από την ανάπτυξη."
+      }
+    },
+    {
+      "id": "hickok-2020",
+      "citation": "Hickok, M. (2021). Lessons learned from AI ethics principles for future actions. AI and Ethics, 1, 41–47.",
+      "url": "https://doi.org/10.1007/s43681-020-00008-1",
+      "summary": {
+        "en": "Reviews the wave of more than 100 published AI ethics principles and finds that they are disproportionately produced by private companies and institutions from the US and Western Europe, raising concerns about whose values and priorities get represented. Argues that future governance efforts, standards, and legislation must actively incorporate more diverse voices, particularly those of people already affected by biased algorithms.",
+        "el": "Επισκοπεί το κύμα των πάνω από 100 δημοσιευμένων αρχών ηθικής ΑΙ και διαπιστώνει ότι παράγονται δυσανάλογα από ιδιωτικές εταιρείες και φορείς των ΗΠΑ και της Δυτικής Ευρώπης, εγείροντας ανησυχίες για το ποιες αξίες εκπροσωπούνται. Υποστηρίζει ότι οι μελλοντικές προσπάθειες διακυβέρνησης, τα πρότυπα και η νομοθεσία πρέπει να ενσωματώνουν πιο ποικίλες φωνές, ιδίως εκείνων που ήδη επηρεάζονται από μεροληπτικούς αλγορίθμους."
+      }
+    },
+    {
+      "id": "lauer-2020",
+      "citation": "Lauer, D. (2021). You cannot have AI ethics without ethics. AI and Ethics, 1, 21–25.",
+      "url": "https://doi.org/10.1007/s43681-020-00013-4",
+      "summary": {
+        "en": "Argues that ethical AI deployment cannot be achieved through AI-specific guidelines alone, since organisations that lack a broader, firmly grounded culture of ethics will fail regardless of how detailed their AI principles are. Draws on lessons from medical ethics and systems theory to argue that understanding how complex organisations actually behave matters more than adding another isolated ethics checklist.",
+        "el": "Υποστηρίζει ότι η ηθική ανάπτυξη ΑΙ δεν μπορεί να επιτευχθεί μόνο μέσω κατευθυντήριων οδηγιών ειδικών για την ΑΙ, καθώς οργανισμοί που στερούνται ευρύτερης, στέρεα θεμελιωμένης κουλτούρας ηθικής θα αποτύχουν ανεξάρτητα από το πόσο λεπτομερείς είναι οι αρχές τους. Αντλεί διδάγματα από την ιατρική δεοντολογία και τη θεωρία συστημάτων για να δείξει ότι η κατανόηση της συμπεριφοράς σύνθετων οργανισμών μετράει περισσότερο από ακόμα μία απομονωμένη λίστα ελέγχου ηθικής."
+      }
+    },
+    {
+      "id": "ayling-chapman-2021",
+      "citation": "Ayling, J., & Chapman, A. (2022). Putting AI ethics to work: are the tools fit for purpose? AI and Ethics, 2, 405–429.",
+      "url": "https://doi.org/10.1007/s43681-021-00084-x",
+      "summary": {
+        "en": "Reviews practical AI ethics tools that go beyond high-level principle statements to offer concrete methods for impact assessment and audit, comparing them against established best practices for risk assessment drawn from technology, environmental, privacy, finance, and engineering fields. Identifies significant gaps in current AI ethics tools, particularly around auditing and risk assessment, that still need to be addressed.",
+        "el": "Επισκοπεί πρακτικά εργαλεία ηθικής ΑΙ που ξεπερνούν τις δηλώσεις αρχών υψηλού επιπέδου και προσφέρουν συγκεκριμένες μεθόδους αξιολόγησης αντικτύπου και ελέγχου, συγκρίνοντάς τα με βέλτιστες πρακτικές από τους τομείς της τεχνολογίας, του περιβάλλοντος, της ιδιωτικότητας, των οικονομικών και της μηχανικής. Εντοπίζει σημαντικά κενά στα τρέχοντα εργαλεία ηθικής ΑΙ, ιδίως στον έλεγχο και την αξιολόγηση κινδύνου."
+      }
+    },
+    {
+      "id": "munn-2022",
+      "citation": "Munn, L. (2023). The uselessness of AI ethics. AI and Ethics, 3(3), 869–877.",
+      "url": "https://doi.org/10.1007/s43681-022-00209-w",
+      "summary": {
+        "en": "Argues that published AI ethics principles are largely useless in practice because they are vague or contested, isolated from industries and education systems that mostly ignore ethics, and toothless in the sense of carrying no real consequences for violation. Proposes shifting attention away from abstract principles toward concrete \"AI justice\" concerns, narrower questions of accuracy, and genuine auditing mechanisms.",
+        "el": "Υποστηρίζει ότι οι δημοσιευμένες αρχές ηθικής ΑΙ είναι σε μεγάλο βαθμό άχρηστες στην πράξη, καθώς είναι ασαφείς ή αμφισβητούμενες, απομονωμένες από κλάδους και εκπαιδευτικά συστήματα που αγνοούν την ηθική, και χωρίς πραγματικές συνέπειες σε περίπτωση παραβίασης. Προτείνει τη μετατόπιση της προσοχής από αφηρημένες αρχές προς συγκεκριμένα ζητήματα «δικαιοσύνης ΑΙ» και γνήσιους μηχανισμούς ελέγχου."
+      }
+    },
+    {
+      "id": "schiff-2020",
+      "citation": "Schiff, D., Biddle, J., Borenstein, J., & Laas, K. (2020). What's Next for AI Ethics, Policy, and Governance? A Global Overview. AIES '20: Proceedings of the 2020 AAAI/ACM Conference on AI, Ethics, and Society.",
+      "url": "https://doi.org/10.1145/3375627.3375804",
+      "summary": {
+        "en": "Examines the homogeneity of who authors AI ethics documents, proposes a typology distinguishing obvious from less obvious motivations behind them (genuine harm prevention versus reputation management or pre-empting regulation), and discusses what factors make a document likely to actually influence AI governance. Argues that understanding these underlying motivations is necessary to judge which AI ethics documents are likely to have real impact.",
+        "el": "Εξετάζει την ομοιογένεια των φορέων που συντάσσουν έγγραφα ηθικής ΑΙ, προτείνει μια τυπολογία που διακρίνει τα προφανή από τα λιγότερο προφανή κίνητρα (γνήσια πρόληψη βλάβης έναντι διαχείρισης φήμης ή πρόληψης ρύθμισης), και συζητά ποιοι παράγοντες κάνουν ένα έγγραφο πιθανό να επηρεάσει πραγματικά τη διακυβέρνηση της ΑΙ."
+      }
+    },
+    {
+      "id": "floridi-2013-ethics-of-information",
+      "citation": "Floridi, L. (2013). The Ethics of Information. Oxford: Oxford University Press.",
+      "url": "https://doi.org/10.1093/acprof:oso/9780199641321.001.0001",
+      "summary": {
+        "en": "Develops a full philosophical foundation for information ethics, proposing that all informational entities have intrinsic worth and that ethical action should avoid, prevent, and remove \"entropy\" (disorder or corruption) in the infosphere, while actively promoting the flourishing of informational entities. Extends ethical consideration beyond humans alone to any entity embedded in the informational environment, including artificial agents.",
+        "el": "Αναπτύσσει ένα πλήρες φιλοσοφικό θεμέλιο για την ηθική της πληροφορίας, προτείνοντας ότι όλες οι πληροφοριακές οντότητες έχουν εγγενή αξία και ότι η ηθική δράση πρέπει να αποφεύγει, να προλαμβάνει και να αφαιρεί την «εντροπία» (αταξία ή φθορά) στην infosphere, προάγοντας παράλληλα την ακμή των πληροφοριακών οντοτήτων. Επεκτείνει την ηθική μέριμνα πέρα από τους ανθρώπους, σε κάθε οντότητα εντός του πληροφοριακού περιβάλλοντος, συμπεριλαμβανομένων των τεχνητών πρακτόρων."
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Flask==3.1.3
+tensorflow==2.21.0
+# tf-keras: pulled in automatically by tensorflow 2.21 for backward
+# compatibility with libraries (like sentence-transformers, via transformers)
+# that still expect the Keras 2 API for their TF-specific integrations.
+tf-keras==2.21.0
+numpy==2.2.6
+python-dotenv==1.0.1
+requests==2.32.3
+sentence-transformers==3.0.1
+scikit-learn==1.5.1
+
+# Optional: only needed if you enable the "AI-drafted summary" narrative
+# feature or the LLM classification fallback (engine/llm_client.py) with
+# an external provider. Ollama needs no extra package beyond `requests`
+# above. Uncomment whichever external provider you use.
+# openai==1.51.0
+# anthropic==0.34.2

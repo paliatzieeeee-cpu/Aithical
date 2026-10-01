@@ -1,0 +1,28 @@
+# Περιβάλλοντα και ρυθμίσεις τοπικής ανάπτυξης
+venv/
+.venv/
+.env
+.idea/
+.claude/
+.git/
+.gitignore
+.gcloudignore
+__pycache__/
+*.pyc
+
+# Έγγραφα, αντίγραφα ασφαλείας και αρχεία καταγραφής
+*.docx
+*.zip
+*.rar
+*.log
+logs/
+model/training_data_best_*.py
+saved_model/best_*.keras
+
+# Δεδομένα χρηστών και ενδιάμεσα αρχεία εκπαίδευσης: δεν ανεβαίνουν στο cloud
+data/usage_log*.jsonl
+data/augmentation_*.jsonl
+
+# Δεν χρειάζονται στην εκτέλεση
+README.md
+requirements.txt
