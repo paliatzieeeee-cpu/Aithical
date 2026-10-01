@@ -50,7 +50,8 @@ dilemma text
 Optional, only for the matching feature:
 
 - [Ollama](https://ollama.com) — free, local LLM (nothing leaves your machine)
-- An OpenAI or Anthropic API key — paid alternative to Ollama
+- A Groq, OpenAI or Anthropic API key — hosted alternative to Ollama
+  (Groq is what the public Cloud Run deployment uses)
 - A [Tavily](https://www.tavily.com) API key — free, for live web search
 
 ---
@@ -163,6 +164,27 @@ Trade-off worth stating in the thesis: an external API usually gives better
 summaries and better Greek, but the dilemma text leaves your machine; Ollama
 keeps everything local.
 
+### 3.2b Groq (used by the public deployment)
+
+Groq serves open models through an OpenAI-compatible API; no extra SDK is
+needed (the app calls it with `requests`).
+
+1. Create a key at https://console.groq.com.
+2. In `.env`:
+   ```
+   LLM_PROVIDER=groq
+   GROQ_API_KEY=your-key
+   GROQ_MODEL=openai/gpt-oss-120b
+   ```
+3. Restart `python app.py`.
+
+Development started with llama3.1 on Ollama; the public version uses
+`openai/gpt-oss-120b` on Groq, because a server without a GPU cannot run a
+local LLM and its Greek is noticeably better. Each analysis makes at most one
+LLM call (the summary); the classification second opinion stays off unless
+`LLM_CLASSIFICATION_FALLBACK=true`. If Groq is unreachable or rate-limited,
+the report is still shown, just without the summary.
+
 ### 3.3 Live web search (Tavily)
 
 1. Create a free Tavily account (no credit card, 1,000 searches per month)
@@ -188,6 +210,31 @@ without opening ports:
 
 In both cases the site is online only while `python app.py` **and** the
 tunnel are running. Run the tunnel only when you need it.
+
+### 3.5 Permanent hosting on Google Cloud Run
+
+The repository includes a CPU-only container setup: `Dockerfile`,
+`requirements-cloudrun.txt`, `.dockerignore` and `.gcloudignore` (needed
+because `.gitignore` excludes `saved_model/`, which the image must contain).
+The sentence encoder is downloaded at build time, so the container runs
+offline from Hugging Face.
+
+1. Train the classifier locally first (step 2.4), so `saved_model/` exists.
+2. Store the keys in Secret Manager (never in the image or in files):
+   ```bash
+   gcloud secrets create groq-key --data-file=-
+   gcloud secrets create tavily-key --data-file=-
+   ```
+   (paste the key, then Ctrl+Z / Ctrl+D), and grant the Cloud Run service
+   account `roles/secretmanager.secretAccessor`.
+3. Deploy from the project folder:
+   ```bash
+   gcloud run deploy aithical --source . --region europe-west1 --allow-unauthenticated --memory 2Gi --cpu 1 --cpu-boost --max-instances 1 --set-env-vars LLM_PROVIDER=groq,GROQ_MODEL=openai/gpt-oss-120b,LLM_CLASSIFICATION_FALLBACK=false --set-secrets GROQ_API_KEY=groq-key:latest,TAVILY_API_KEY=tavily-key:latest
+   ```
+
+The service scales to zero: after a period of inactivity the first request
+takes about a minute (loading TensorFlow and the encoder); later requests take
+1–3 seconds.
 
 ---
 
@@ -405,12 +452,15 @@ so your own reviewed additions are never lost.
 aithicist/
 ├── app.py                     # Flask app: routes, rate limiting, live search
 ├── requirements.txt
+├── requirements-cloudrun.txt  # pinned, CPU-only deps for the container
+├── Dockerfile                 # Cloud Run image
 ├── .env.example               # template for .env
 ├── engine/
 │   ├── advisor.py             # classify -> retrieve -> compose; thresholds;
 │   │                          # bilingual + EU/US jurisdiction logic
 │   ├── bibliography.py        # semantic RAG over the literature corpus
-│   ├── llm_client.py          # Ollama / OpenAI / Anthropic client
+│   ├── llm_client.py          # Ollama / OpenAI / Anthropic / Groq client
+│   ├── risk_tier.py           # EU AI Act risk tier (pyramid)
 │   ├── live_search.py         # live web search (Tavily)
 │   └── usage_log.py           # logs real usage for later review
 ├── model/
