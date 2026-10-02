@@ -480,47 +480,47 @@
       },
       "description": {
         "en": "Whether people affected by the AI system can understand how and why it produced a given output or decision.",
-        "el": "Κατά πόσο τα άτομα που επηρεάζονται από το σύστημα ΑΙ μπορούν να κατανοήσουν πώς και γιατί παρήγαγε ένα συγκεκριμένο αποτέλεσμα ή απόφαση."
+        "el": "Αν όσοι επηρεάζονται από το σύστημα ΤΝ μπορούν να καταλάβουν πώς και γιατί κατέληξε σε ένα αποτέλεσμα ή μια απόφαση."
       }
     },
     "fairness": {
       "label": {
         "en": "Fairness & Non-discrimination",
-        "el": "Δικαιοσύνη & Μη Διάκριση"
+        "el": "Δικαιοσύνη και μη διάκριση"
       },
       "description": {
         "en": "Whether the system treats individuals and groups equitably and avoids biased or discriminatory outcomes.",
-        "el": "Κατά πόσο το σύστημα αντιμετωπίζει δίκαια άτομα και ομάδες και αποφεύγει μεροληπτικά ή διακριτικά αποτελέσματα."
+        "el": "Αν το σύστημα αντιμετωπίζει δίκαια άτομα και ομάδες, χωρίς μεροληψία ή διακρίσεις."
       }
     },
     "non_maleficence": {
       "label": {
         "en": "Non-maleficence & Safety",
-        "el": "Αποφυγή Βλάβης & Ασφάλεια"
+        "el": "Αποφυγή βλάβης και ασφάλεια"
       },
       "description": {
         "en": "Whether the use of the system could cause harm, physical, psychological, financial or reputational, to people or the organisation.",
-        "el": "Κατά πόσο η χρήση του συστήματος θα μπορούσε να προκαλέσει βλάβη, σωματική, ψυχολογική, οικονομική ή στη φήμη, σε ανθρώπους ή στον οργανισμό."
+        "el": "Αν η χρήση του συστήματος μπορεί να βλάψει ανθρώπους ή τον οργανισμό: σωματικά, ψυχολογικά, οικονομικά ή στη φήμη τους."
       }
     },
     "accountability": {
       "label": {
         "en": "Accountability & Governance",
-        "el": "Λογοδοσία & Διακυβέρνηση"
+        "el": "Λογοδοσία και διακυβέρνηση"
       },
       "description": {
         "en": "Whether there is a clear, traceable chain of human responsibility for decisions the system informs or makes.",
-        "el": "Κατά πόσο υπάρχει σαφής, ιχνηλάσιμη αλυσίδα ανθρώπινης ευθύνης για τις αποφάσεις που το σύστημα διαμορφώνει ή λαμβάνει."
+        "el": "Αν είναι σαφές ποιος άνθρωπος ευθύνεται για τις αποφάσεις που παίρνει ή επηρεάζει το σύστημα, και αν αυτό τεκμηριώνεται."
       }
     },
     "privacy": {
       "label": {
         "en": "Privacy & Data Protection",
-        "el": "Ιδιωτικότητα & Προστασία Δεδομένων"
+        "el": "Ιδιωτικότητα και προστασία δεδομένων"
       },
       "description": {
         "en": "Whether personal or confidential data is collected, stored, or processed by the system in a lawful and proportionate way.",
-        "el": "Κατά πόσο τα προσωπικά ή εμπιστευτικά δεδομένα συλλέγονται, αποθηκεύονται ή υφίστανται επεξεργασία από το σύστημα με νόμιμο και αναλογικό τρόπο."
+        "el": "Αν τα προσωπικά ή εμπιστευτικά δεδομένα συλλέγονται, αποθηκεύονται και χρησιμοποιούνται νόμιμα και μόνο στον βαθμό που χρειάζεται."
       }
     }
   },

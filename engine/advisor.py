@@ -101,9 +101,9 @@ DISCLAIMER = {
         "and may not reflect the most recent regulatory changes."
     ),
     "el": (
-        "Αυτή η αναφορά παράγεται από ένα ερευνητικό εργαλείο πρωτοτύπου και αποτελεί μόνο γενική καθοδήγηση. "
-        "Δεν συνιστά νομική συμβουλή, δεν αντικαθιστά την επισκόπηση από εξειδικευμένο δικηγόρο ή υπεύθυνο κανονιστικής "
-        "συμμόρφωσης, και ενδέχεται να μην αντικατοπτρίζει τις πιο πρόσφατες κανονιστικές αλλαγές."
+        "Η αναφορά προέρχεται από ερευνητικό πρωτότυπο και δίνει μόνο γενική καθοδήγηση. "
+        "Δεν αποτελεί νομική συμβουλή, δεν αντικαθιστά τον έλεγχο από δικηγόρο ή υπεύθυνο κανονιστικής "
+        "συμμόρφωσης και ίσως δεν περιλαμβάνει τις πιο πρόσφατες αλλαγές της νομοθεσίας."
     ),
 }
 
@@ -284,8 +284,14 @@ def _entries_by_type(kb: dict, categories: list, country: str, sector: str, entr
 # Κύρια συνάρτηση: εκτελεί ολόκληρη την αλυσίδα ταξινόμηση -> ανάκτηση
 # -> σύνθεση για ένα δίλημμα και επιστρέφει τη δομημένη αναφορά
 # -----------------------------------------------------------------------
-def analyze(dilemma: str, country: str, sector: str, classifier, kb: dict = None, lang: str = DEFAULT_LANG) -> dict:
-    """Run the full classify -> retrieve -> compose pipeline for one dilemma."""
+def analyze(dilemma: str, country: str, sector: str, classifier, kb: dict = None, lang: str = DEFAULT_LANG,
+            extra_dimensions: list = None) -> dict:
+    """Run the full classify -> retrieve -> compose pipeline for one dilemma.
+
+    `extra_dimensions`: dimensions implied by the AI Act risk tier (see
+    engine/risk_tier.py). They are added to retrieval when the classifier
+    missed them, without changing the classifier's scores.
+    """
     kb = kb or load_knowledge_base()
     lang = _lang(lang)
     country = country if country in kb["countries"] else GENERAL
@@ -296,6 +302,9 @@ def analyze(dilemma: str, country: str, sector: str, classifier, kb: dict = None
     scores = classifier.predict(dilemma)
     scores, llm_assisted = _maybe_enhance_with_llm(dilemma, scores)
     detected = _select_detected_dimensions(scores)
+    # Διαστάσεις που προκύπτουν από τη βαθμίδα κινδύνου και δεν εντοπίστηκαν
+    added = [d for d in (extra_dimensions or []) if d in scores and d not in detected]
+    detected = detected + added
 
     # Βήμα 2: ανάκτηση σχετικών αρχών, κανονισμών και ενεργειών από τη
     # βάση γνώσης, φιλτραρισμένων ανά εντοπισμένη κατηγορία, χώρα, κλάδο
@@ -322,6 +331,7 @@ def analyze(dilemma: str, country: str, sector: str, classifier, kb: dict = None
             "label": _pick(kb["categories"][cat]["label"], lang),
             "description": _pick(kb["categories"][cat]["description"], lang),
             "score": round(scores.get(cat, 0.0), 3),
+            "added_by_risk": cat in added,
         }
         for cat in detected
     ]

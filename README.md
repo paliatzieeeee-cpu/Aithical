@@ -283,6 +283,28 @@ Rules for honest measurement:
   poorly.
 - The random seed is fixed, so the same data always gives the same numbers.
 
+### 5.1 The EU AI Act risk tier
+
+`engine/risk_tier.py` places each dilemma on the four-level pyramid of the AI
+Act. It combines (1) bilingual keywords and keyword combinations tied to the
+article or Annex point they come from, (2) semantic similarity to a short
+description of each use case, accepted without a keyword only when the
+dilemma is clearly closer to that use case than to everyday AI uses, and (3)
+a vote of the 5 nearest labelled scenarios. Similarity alone never yields a
+"prohibited" verdict; it yields "high risk" with an explicit warning instead.
+Each use case also carries the ethical dimensions it raises, which are added
+to retrieval when the classifier missed them (shown as "from the risk level").
+
+```bash
+python -m model.evaluate_risk_tier --errors
+```
+
+scores the 160 labelled scenarios of `model/risk_tier_cases.py` (dev 60,
+test 60, test2 40) with leave-one-out for the nearest-neighbour memory. On the
+second frozen set (test2), measured once before it joined the memory, the
+version with nearest neighbours reached accuracy 0.75 with 15/16 high-risk
+scenarios recognised and no non-prohibited use shown as prohibited.
+
 ---
 
 ## 6. Improving the classifier — the full cycle
@@ -468,6 +490,8 @@ aithicist/
 │   ├── ethics_classifier.py   # embedding + TF classifier head
 │   ├── train_classifier.py    # training -> saved_model/
 │   ├── evaluate_classifier.py # cross-validation + frozen held-out set
+│   ├── risk_tier_cases.py     # 160 labelled AI Act risk-tier scenarios
+│   ├── evaluate_risk_tier.py  # risk-tier accuracy (dev / test / test2)
 │   ├── review_log.py          # review real usage -> training data
 │   ├── augment_with_llm.py    # generate candidates (topic x dimension grid)
 │   ├── dataset_stats.py       # label balance report + top-up suggestion

@@ -498,6 +498,14 @@ function renderDimensions(dimensions) {
     desc.className = "dimension-desc";
     desc.textContent = dim.description;
     nameWrap.appendChild(name);
+    // Διάσταση που προστέθηκε από τη βαθμίδα κινδύνου (όχι από τον ταξινομητή)
+    if (dim.added_by_risk) {
+      const tag = document.createElement("span");
+      tag.className = "dimension-tag";
+      tag.textContent = t("addedByRisk");
+      tag.title = t("addedByRiskTitle");
+      nameWrap.appendChild(tag);
+    }
     nameWrap.appendChild(desc);
 
     const score = document.createElement("span");

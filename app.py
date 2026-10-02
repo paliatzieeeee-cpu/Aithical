@@ -150,20 +150,37 @@ def api_analyze():
     # Έλεγχοι εγκυρότητας εισόδου
     # ---------------------------------------------------------------
     if not dilemma:
-        message = "Περιγράψτε ένα επιχειρηματικό δίλημμα πριν την υποβολή." if lang == "el" \
+        message = "Περιγράψτε πρώτα την περίπτωσή σας." if lang == "el" \
             else "Please describe a business dilemma before submitting."
         return jsonify({"error": message}), 400
     if len(dilemma) > MAX_DILEMMA_LENGTH:
-        message = f"Κρατήστε την περιγραφή κάτω από {MAX_DILEMMA_LENGTH} χαρακτήρες." if lang == "el" \
+        message = f"Η περιγραφή πρέπει να έχει έως {MAX_DILEMMA_LENGTH} χαρακτήρες." if lang == "el" \
             else f"Please keep the description under {MAX_DILEMMA_LENGTH} characters."
         return jsonify({"error": message}), 400
+
+    # ---------------------------------------------------------------
+    # Εκτίμηση της βαθμίδας κινδύνου κατά την πυραμίδα του Κανονισμού
+    # ΤΝ της ΕΕ (απαγορευμένος / υψηλός / περιορισμένος / ελάχιστος),
+    # με τη νομική βάση κάθε αντιστοίχισης. Βλ. engine/risk_tier.py.
+    # Γίνεται πριν την ανάκτηση, ώστε οι ηθικές διαστάσεις της περίπτωσης
+    # που εντοπίστηκε να συμπληρώνουν όσες έχασε ο ταξινομητής.
+    # ---------------------------------------------------------------
+    sector_for_risk = sector if sector in knowledge_base["sectors"] else "General / Other"
+    ai_act_risk = assess_risk_tier(
+        dilemma,
+        sector=sector_for_risk,
+        in_eu=not (country in US_STATES or country == "United States"),
+        lang=lang,
+    )
 
     # ---------------------------------------------------------------
     # Κύρια αλυσίδα επεξεργασίας: ταξινόμηση ηθικών διαστάσεων και
     # ανάκτηση σχετικών αρχών, κανονισμών και προτεινόμενων ενεργειών
     # από την επιμελημένη βάση γνώσης
     # ---------------------------------------------------------------
-    result = analyze(dilemma, country, sector, classifier, kb=knowledge_base, lang=lang)
+    result = analyze(dilemma, country, sector, classifier, kb=knowledge_base, lang=lang,
+                     extra_dimensions=ai_act_risk["dimensions"])
+    result["ai_act_risk"] = ai_act_risk
 
     # ---------------------------------------------------------------
     # Καταγραφή (μόνο) της πρόβλεψης για πιθανή μελλοντική επέκταση του
@@ -171,18 +188,6 @@ def api_analyze():
     # μόνη της. Βλ. engine/usage_log.py και model/review_log.py.
     # ---------------------------------------------------------------
     log_prediction(dilemma, result["all_scores"], country, sector, lang)
-
-    # ---------------------------------------------------------------
-    # Εκτίμηση της βαθμίδας κινδύνου κατά την πυραμίδα του Κανονισμού
-    # ΤΝ της ΕΕ (απαγορευμένος / υψηλός / περιορισμένος / ελάχιστος),
-    # με τη νομική βάση κάθε αντιστοίχισης. Βλ. engine/risk_tier.py.
-    # ---------------------------------------------------------------
-    result["ai_act_risk"] = assess_risk_tier(
-        dilemma,
-        sector=result["sector"],
-        in_eu=not (result["country"] in US_STATES or result["country"] == "United States"),
-        lang=lang,
-    )
 
     # ---------------------------------------------------------------
     # Σημασιολογική ανάκτηση βιβλιογραφίας (μικρό στρώμα RAG), πάντα
