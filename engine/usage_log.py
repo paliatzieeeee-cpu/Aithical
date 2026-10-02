@@ -38,7 +38,12 @@ def log_prediction(dilemma: str, all_scores: dict, country: str, sector: str, la
 
     Fails silently on any error — logging is a best-effort side channel
     and must never break the actual user-facing request.
+
+    Disabled on the public deployment: Cloud Run sets K_SERVICE, and there
+    visitors' dilemmas are not stored at all (USAGE_LOG=true overrides).
     """
+    if os.environ.get("K_SERVICE") and os.environ.get("USAGE_LOG", "").lower() != "true":
+        return
     try:
         entry = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
