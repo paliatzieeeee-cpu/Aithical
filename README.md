@@ -297,7 +297,8 @@ scenarios of `model/rq2_cases.py` against the provisions a reviewer would
 expect (51 in total), checks every legal reference in the LLM summaries
 against the sources the LLM was given, and asks the same LLM the scenarios
 directly as a baseline. It needs `GROQ_API_KEY`; `--skip-llm` runs the
-retrieval part only. Result: 41/51 expected provisions in the reports, 0 of
+retrieval part only. Result: 41/51 expected provisions in the reports (42/51
+after the Art. 5(1)(h) context fix), 0 of
 145 summary references outside the sources, 18/51 in the direct answers.
 
 ### 5.1 The EU AI Act risk tier

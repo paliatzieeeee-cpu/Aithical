@@ -196,6 +196,10 @@ USE_CASES = [
                     ["public", "station", "street", "stadium", "crowd", "square", "metro", "everyone passing",
                      "δημοσι", "σταθμ", "γηπεδ", "πληθ", "δρομ", "πλατει", "μετρο"],
                     ["police", "law enforcement", "wanted", "suspect", "αστυνομ", "καταζητ", "υποπτ"]]],
+        # Η απαγόρευση αφορά μόνο την επιβολή του νόμου: χωρίς τέτοια αναφορά οι λέξεις-κλειδιά
+        # δεν μετρούν, και η χρήση (π.χ. σε σούπερ μάρκετ) πέφτει στο Παράρτημα III, σημείο 1
+        "keyword_context": ["police", "law enforcement", "wanted", "suspect", "αστυνομ", "καταζητ", "υποπτ",
+                            "επιβολη του νομου"],
         "prototype": "Real-time remote biometric identification such as live facial recognition of people in "
                      "publicly accessible spaces for law enforcement purposes.",
     },
@@ -685,6 +689,7 @@ for _case in USE_CASES:
     _case["_patterns"] = _compile(_case["keywords"])
     _case["_combos"] = [[_compile(group) for group in combo] for combo in _case.get("combos", [])]
     _case["_combo_exclude"] = _compile(_case.get("combo_exclude", []))
+    _case["_keyword_context"] = _compile(_case.get("keyword_context", []))
 
 # Ένας συνδυασμός σε απαγορευμένη πρακτική μετράει μόνο αν συμφωνεί και η
 # σημασιολογική ομοιότητα. Λέξεις όπως «emotion» και «employees» μπορεί να
@@ -763,6 +768,9 @@ def _knn_vote(query):
 # -----------------------------------------------------------------------
 def _score_case(case: dict, norm_text: str, margin, sector: str, everyday_gap=None) -> tuple:
     hits = sum(1 for pattern in case["_patterns"] if pattern.search(norm_text))
+    # Λέξεις-κλειδιά που μετρούν μόνο μέσα στο σωστό πλαίσιο (keyword_context)
+    if case["_keyword_context"] and not any(p.search(norm_text) for p in case["_keyword_context"]):
+        hits = 0
 
     sem_score = 0.0
     if margin is not None:
