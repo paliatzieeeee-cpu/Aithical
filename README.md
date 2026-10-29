@@ -475,6 +475,10 @@ The app uses a separate detection threshold per dimension, in
 `DETECTION_THRESHOLDS` in `engine/advisor.py`. `evaluate_classifier` prints
 suggested values. Copy them **only** when the new model is clearly better on
 the held-out set; thresholds tuned on a worse model make the app worse.
+Keep every threshold at 0.35 or below: for an orientation tool a missed
+dimension costs more than an extra one, and the cap raises micro recall on
+the held-out set from 0.70 to 0.75 (macro F1 0.68 → 0.71) at almost the same
+precision.
 
 ### Where new examples land in `training_data.py`
 

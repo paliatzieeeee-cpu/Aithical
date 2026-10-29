@@ -39,18 +39,18 @@ from engine.llm_client import LLMUnavailable, classify_dilemma
 KB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "knowledge_base.json")
 
 DETECTION_THRESHOLD = 0.45  # εφεδρικό κατώφλι, για κατηγορίες που δεν αναφέρονται παρακάτω
-# Κατώφλι ανίχνευσης ανά ηθική διάσταση. Ξεκινούν όλα στην ίδια τιμή
-# (0.45) απλώς ως ένα λογικό σημείο εκκίνησης· ενημέρωσέ τα με τις
-# τιμές που προτείνει το `python -m model.evaluate_classifier` (ενότητα
-# «Βέλτιστο κατώφλι ανά κατηγορία»), αφού κάθε ηθική διάσταση έχει
-# διαφορετική "δυσκολία" ανίχνευσης και ένα ενιαίο κατώφλι για όλες δεν
-# είναι βέλτιστο.
+# Κατώφλι ανίχνευσης ανά ηθική διάσταση: οι τιμές που προτείνει το
+# `python -m model.evaluate_classifier` (βέλτιστο F1 ανά κατηγορία), με
+# ανώτατο όριο 0.35. Σε ένα εργαλείο προσανατολισμού μια χαμένη διάσταση
+# κοστίζει περισσότερο από μια περιττή, οπότε προτιμάται το recall: στο
+# σύνολο δοκιμής το micro recall ανεβαίνει από 0.70 σε 0.75 και το macro F1
+# από 0.68 σε 0.71, με σχεδόν ίδιο precision (βλ. διπλωματική, Ενότητα 6.7).
 DETECTION_THRESHOLDS = {
     "transparency": 0.30,
-    "fairness": 0.40,
+    "fairness": 0.35,
     "non_maleficence": 0.25,
-    "accountability": 0.50,
-    "privacy": 0.40,
+    "accountability": 0.35,
+    "privacy": 0.35,
 }
 MIN_DETECTED_DIMENSIONS = 1
 GENERAL = "General / Other"
