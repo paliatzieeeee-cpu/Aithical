@@ -283,6 +283,23 @@ Rules for honest measurement:
   poorly.
 - The random seed is fixed, so the same data always gives the same numbers.
 
+**Seed stability.** `python -m model.seed_stability` rebuilds the five
+training-set stages (240, 261, 345, 408, 444 examples), retrains each with 10
+seeds and reports mean ± sd, 95% bootstrap intervals over the 62 test
+dilemmas, a paired bootstrap of the stage differences and precision/recall at
+lower thresholds. It does not touch `saved_model/`. With 10 seeds the final
+stage reaches macro F1 0.71 ± 0.01 (baseline 0.66 ± 0.02); the gain holds in
+every seed, but its 95% interval ([−0.04, +0.15]) shows that 62 test dilemmas
+are too few to prove it.
+
+**Retrieval and summaries.** `python -m model.evaluate_rq2` checks the 24
+scenarios of `model/rq2_cases.py` against the provisions a reviewer would
+expect (51 in total), checks every legal reference in the LLM summaries
+against the sources the LLM was given, and asks the same LLM the scenarios
+directly as a baseline. It needs `GROQ_API_KEY`; `--skip-llm` runs the
+retrieval part only. Result: 41/51 expected provisions in the reports, 0 of
+145 summary references outside the sources, 18/51 in the direct answers.
+
 ### 5.1 The EU AI Act risk tier
 
 `engine/risk_tier.py` places each dilemma on the four-level pyramid of the AI
@@ -304,6 +321,12 @@ test 60, test2 40) with leave-one-out for the nearest-neighbour memory. On the
 second frozen set (test2), measured once before it joined the memory, the
 version with nearest neighbours reached accuracy 0.75 with 15/16 high-risk
 scenarios recognised and no non-prohibited use shown as prohibited.
+
+The dates and obligations follow the AI Act as amended by Regulation (EU)
+2026/1744 (Digital Omnibus on AI): high-risk obligations from 2 December 2027
+(Annex III) and 2 August 2028 (Annex I), and the new prohibitions of Art.
+5(1)(ba)–(bb) (non-consensual intimate deepfakes, child sexual abuse material)
+from 2 December 2026.
 
 ---
 
@@ -492,6 +515,9 @@ aithicist/
 │   ├── evaluate_classifier.py # cross-validation + frozen held-out set
 │   ├── risk_tier_cases.py     # 160 labelled AI Act risk-tier scenarios
 │   ├── evaluate_risk_tier.py  # risk-tier accuracy (dev / test / test2)
+│   ├── seed_stability.py      # 10-seed retraining per stage + bootstrap CIs
+│   ├── rq2_cases.py           # 24 scenarios with expected provisions
+│   ├── evaluate_rq2.py        # retrieval, summary faithfulness, direct-LLM baseline
 │   ├── review_log.py          # review real usage -> training data
 │   ├── augment_with_llm.py    # generate candidates (topic x dimension grid)
 │   ├── dataset_stats.py       # label balance report + top-up suggestion

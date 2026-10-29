@@ -754,8 +754,8 @@
       "sector": "General / Other",
       "type": "regulation",
       "text": {
-        "en": "The EU AI Act bans certain uses outright (e.g. manipulative or exploitative AI, some biometric categorisation) and imposes risk management duties on high-risk systems.",
-        "el": "Ο AI Act απαγορεύει ρητά ορισμένες χρήσεις (π.χ. χειραγωγική ή εκμεταλλευτική ΑΙ, ορισμένες μορφές βιομετρικής κατηγοριοποίησης) και επιβάλλει υποχρεώσεις διαχείρισης κινδύνου σε συστήματα υψηλού κινδύνου."
+        "en": "The EU AI Act bans certain uses outright (e.g. manipulative or exploitative AI, some biometric categorisation) and imposes risk management duties on high-risk systems. Regulation (EU) 2026/1744 (Digital Omnibus) adds, from 2 December 2026, bans on AI that generates realistic intimate images, video or audio of an identifiable person without their explicit consent and on child sexual abuse material, and moves the high-risk obligations to 2 December 2027 (Annex III) and 2 August 2028 (Annex I).",
+        "el": "Ο AI Act απαγορεύει ρητά ορισμένες χρήσεις (π.χ. χειραγωγική ή εκμεταλλευτική ΑΙ, ορισμένες μορφές βιομετρικής κατηγοριοποίησης) και επιβάλλει υποχρεώσεις διαχείρισης κινδύνου σε συστήματα υψηλού κινδύνου. Ο Κανονισμός (ΕΕ) 2026/1744 (Digital Omnibus) προσθέτει, από τις 2 Δεκεμβρίου 2026, απαγόρευση της ΤΝ που παράγει ρεαλιστικές ερωτικές εικόνες, βίντεο ή ήχο αναγνωρίσιμου προσώπου χωρίς τη ρητή συναίνεσή του, καθώς και υλικού σεξουαλικής κακοποίησης παιδιών, και μεταθέτει τις υποχρεώσεις υψηλού κινδύνου στις 2 Δεκεμβρίου 2027 (Παράρτημα III) και στις 2 Αυγούστου 2028 (Παράρτημα I)."
       },
       "source": "EU Artificial Intelligence Act",
       "article": {
@@ -763,7 +763,7 @@
         "el": "Άρθρο 5 (απαγορευμένες πρακτικές) & Άρθρο 9 (διαχείριση κινδύνου)"
       },
       "url": "https://artificialintelligenceact.eu/article/5/",
-      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Art. 5 & Art. 9"
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), Art. 5 & Art. 9, as amended by Regulation (EU) 2026/1744"
     },
     {
       "id": "a-harm-support-1",
@@ -2249,8 +2249,8 @@
       "sector": "Arts & Creative Industries",
       "type": "regulation",
       "text": {
-        "en": "AI-generated or manipulated images, audio and video that resemble real people, places or events must be disclosed as such; for evidently artistic, creative, satirical or fictional works the duty is limited to disclosing the existence of such content in a way that does not hamper the display of the work.",
-        "el": "Εικόνες, ήχος και βίντεο που παράγονται ή αλλοιώνονται με ΤΝ και μοιάζουν με πραγματικά πρόσωπα, τόπους ή γεγονότα πρέπει να γνωστοποιούνται ως τέτοια· για προδήλως καλλιτεχνικά, δημιουργικά, σατιρικά ή μυθοπλαστικά έργα η υποχρέωση περιορίζεται στη γνωστοποίηση της ύπαρξης τέτοιου περιεχομένου με τρόπο που δεν εμποδίζει την παρουσίαση του έργου."
+        "en": "AI-generated or manipulated images, audio and video that resemble real people, places or events must be disclosed as such; for evidently artistic, creative, satirical or fictional works the duty is limited to disclosing the existence of such content in a way that does not hamper the display of the work. Providers must also mark such outputs in a machine-readable way; systems placed on the market before 2 August 2026 have until 2 December 2026 to do so (Regulation (EU) 2026/1744).",
+        "el": "Εικόνες, ήχος και βίντεο που παράγονται ή αλλοιώνονται με ΤΝ και μοιάζουν με πραγματικά πρόσωπα, τόπους ή γεγονότα πρέπει να γνωστοποιούνται ως τέτοια· για προδήλως καλλιτεχνικά, δημιουργικά, σατιρικά ή μυθοπλαστικά έργα η υποχρέωση περιορίζεται στη γνωστοποίηση της ύπαρξης τέτοιου περιεχομένου με τρόπο που δεν εμποδίζει την παρουσίαση του έργου. Οι πάροχοι πρέπει επίσης να σημαίνουν τέτοιο περιεχόμενο σε μορφή αναγνώσιμη από μηχανή· για συστήματα που κυκλοφόρησαν πριν από τις 2 Αυγούστου 2026 η προθεσμία είναι η 2α Δεκεμβρίου 2026 (Κανονισμός (ΕΕ) 2026/1744)."
       },
       "source": "EU Artificial Intelligence Act",
       "article": {
@@ -2258,7 +2258,7 @@
         "el": "Άρθρο 50(2) & 50(4)"
       },
       "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
-      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 50(2), 50(4)"
+      "citation": "Regulation (EU) 2024/1689 (Artificial Intelligence Act), OJ L, 2024/1689, 12.7.2024, Art. 50(2), 50(4), as amended by Regulation (EU) 2026/1744"
     },
     {
       "id": "r-hos-eu-1",

@@ -213,6 +213,24 @@ USE_CASES = [
         "prototype": "Predicting the risk that an individual will commit a crime based solely on profiling "
                      "or on their personality traits and characteristics.",
     },
+    {
+        # Προστέθηκε με τον Κανονισμό (ΕΕ) 2026/1744 (Digital Omnibus)· εφαρμόζεται από 2 Δεκεμβρίου 2026
+        "id": "intimate_deepfakes", "tier": "unacceptable", "ref": "Art. 5(1)(ba), (bb)",
+        "label": {"en": "Non-consensual intimate deepfakes or child sexual abuse material",
+                  "el": "Ερωτικά deepfakes χωρίς συναίνεση ή υλικό σεξουαλικής κακοποίησης παιδιών"},
+        "keywords": ["nudify", "undress app", "undressing app", "deepnude", "deep nude", "nude deepfake",
+                     "sexual deepfake", "deepfake porn", "deepfake pornograph", "fake nude", "fake nudes",
+                     "child sexual abuse material", "csam",
+                     "γυμνα deepfake", "ερωτικα deepfake", "σεξουαλικα deepfake", "ψευτικες γυμνες",
+                     "υλικο σεξουαλικης κακοποιησης παιδιων"],
+        # Δημιουργία/αλλοίωση εικόνας ή βίντεο + γυμνό ή σεξουαλικό περιεχόμενο
+        "combos": [[["deepfake", "deep fake", "generat", "manipulat", "undress", "remove clothes", "swap face",
+                     "face swap", "δημιουργ", "παραγ", "αλλοιω", "ξεγυμν", "αφαιρ ρουχ"],
+                    ["nude", "naked", "intimate", "sexual", "sexually explicit", "porn", "explicit image",
+                     "γυμν", "ερωτικ", "σεξουαλ", "πορνογραφ", "προσωπικες στιγμες"]]],
+        "prototype": "AI that generates or manipulates realistic nude, intimate or sexually explicit images or "
+                     "videos of an identifiable person without their consent, or child sexual abuse material.",
+    },
 
     # ---------------- Υψηλού κινδύνου — Παράρτημα III ----------------
     {
@@ -460,6 +478,7 @@ CASE_DIMENSIONS = {
     "face_scraping": ["privacy"],
     "realtime_rbi": ["privacy", "accountability"],
     "predictive_policing": ["fairness", "accountability"],
+    "intimate_deepfakes": ["privacy", "non_maleficence"],
     "employment": ["fairness", "transparency"],
     "credit": ["fairness", "transparency"],
     "insurance": ["fairness", "privacy"],
@@ -528,12 +547,12 @@ TIER_INFO = {
         },
         "obligations": {
             "en": [
-                "Prohibited practices may not be placed on the EU market, put into service or used (Art. 5), in force since 2 February 2025.",
+                "Prohibited practices may not be placed on the EU market, put into service or used (Art. 5), in force since 2 February 2025 (the prohibitions added by Regulation (EU) 2026/1744 apply from 2 December 2026).",
                 "Fines can reach €35 million or 7% of worldwide annual turnover (Art. 99(3)).",
                 "Check whether a narrow exception in Art. 5 applies (e.g. medical or safety reasons for emotion recognition).",
             ],
             "el": [
-                "Οι απαγορευμένες πρακτικές δεν μπορούν να διατίθενται, να τίθενται σε λειτουργία ή να χρησιμοποιούνται στην ΕΕ (Άρθρο 5). Η απαγόρευση ισχύει από τις 2 Φεβρουαρίου 2025.",
+                "Οι απαγορευμένες πρακτικές δεν μπορούν να διατίθενται, να τίθενται σε λειτουργία ή να χρησιμοποιούνται στην ΕΕ (Άρθρο 5). Η απαγόρευση ισχύει από τις 2 Φεβρουαρίου 2025· όσες προστέθηκαν με τον Κανονισμό (ΕΕ) 2026/1744 ισχύουν από τις 2 Δεκεμβρίου 2026.",
                 "Τα πρόστιμα φτάνουν τα 35 εκατ. € ή το 7% του παγκόσμιου ετήσιου κύκλου εργασιών (Άρθρο 99(3)).",
                 "Ελέγξτε αν ισχύει κάποια από τις στενές εξαιρέσεις του Άρθρου 5 (π.χ. ιατρικοί λόγοι ή λόγοι ασφάλειας για την αναγνώριση συναισθημάτων).",
             ],
@@ -567,28 +586,28 @@ TIER_INFO = {
         "obligations": {
             "en": [
                 "Tell people they are interacting with an AI system, unless it is obvious (Art. 50(1)).",
-                "Mark AI-generated audio, image, video or text in a machine-readable way (Art. 50(2)).",
+                "Mark AI-generated audio, image, video or text in a machine-readable way (Art. 50(2)); systems placed on the market before 2 August 2026 have until 2 December 2026 (Regulation (EU) 2026/1744).",
                 "Disclose deepfakes and AI-generated text published to inform the public (Art. 50(4)).",
             ],
             "el": [
                 "Ενημερώστε τους χρήστες ότι μιλούν με σύστημα ΤΝ, εκτός αν αυτό είναι προφανές (Άρθρο 50(1)).",
-                "Σημάνετε, σε μορφή αναγνώσιμη από μηχανή, τον ήχο, την εικόνα, το βίντεο ή το κείμενο που έχει δημιουργηθεί με ΤΝ (Άρθρο 50(2)).",
+                "Σημάνετε, σε μορφή αναγνώσιμη από μηχανή, τον ήχο, την εικόνα, το βίντεο ή το κείμενο που έχει δημιουργηθεί με ΤΝ (Άρθρο 50(2)). Για συστήματα που κυκλοφόρησαν πριν από τις 2 Αυγούστου 2026, η προθεσμία είναι η 2α Δεκεμβρίου 2026 (Κανονισμός (ΕΕ) 2026/1744).",
                 "Δηλώστε ότι πρόκειται για deepfake ή για κείμενο από ΤΝ, όταν δημοσιεύεται για την ενημέρωση του κοινού (Άρθρο 50(4)).",
             ],
         },
     },
     "minimal": {
         "verdict": {
-            "en": "Likely MINIMAL risk: no specific AI Act obligations beyond AI literacy.",
-            "el": "Πιθανότατα ΕΛΑΧΙΣΤΟΣ κίνδυνος: ο Κανονισμός για την ΤΝ δεν επιβάλλει ειδικές υποχρεώσεις, πέρα από τον γραμματισμό στην ΤΝ.",
+            "en": "Likely MINIMAL risk: no specific AI Act obligations beyond supporting AI literacy.",
+            "el": "Πιθανότατα ΕΛΑΧΙΣΤΟΣ κίνδυνος: ο Κανονισμός για την ΤΝ δεν επιβάλλει ειδικές υποχρεώσεις, πέρα από την υποστήριξη του γραμματισμού στην ΤΝ.",
         },
         "obligations": {
             "en": [
-                "Ensure sufficient AI literacy of staff who operate or use the system (Art. 4).",
+                "Take measures to support the AI literacy of staff who operate or use the system (Art. 4, as amended by Regulation (EU) 2026/1744).",
                 "Voluntary codes of conduct are encouraged (Art. 95); other laws (e.g. GDPR, consumer, anti-discrimination law) still apply.",
             ],
             "el": [
-                "Φροντίστε ώστε όσοι χειρίζονται ή χρησιμοποιούν το σύστημα να έχουν επαρκή γνώση της ΤΝ (Άρθρο 4).",
+                "Λάβετε μέτρα που υποστηρίζουν τον γραμματισμό στην ΤΝ όσων χειρίζονται ή χρησιμοποιούν το σύστημα (Άρθρο 4, όπως τροποποιήθηκε από τον Κανονισμό (ΕΕ) 2026/1744).",
                 "Ενθαρρύνονται εθελοντικοί κώδικες δεοντολογίας (Άρθρο 95). Οι υπόλοιποι νόμοι (π.χ. ΓΚΠΔ, προστασία καταναλωτή, απαγόρευση διακρίσεων) εξακολουθούν να ισχύουν.",
             ],
         },
@@ -623,8 +642,12 @@ NOTES = {
         "el": "Ένα σύστημα του Παραρτήματος III δεν θεωρείται υψηλού κινδύνου όταν κάνει μόνο μια στενή, διαδικαστική ή προπαρασκευαστική εργασία και δεν επηρεάζει ουσιαστικά την απόφαση (Άρθρο 6(3)). Αν όμως δημιουργεί προφίλ φυσικών προσώπων, είναι πάντα υψηλού κινδύνου.",
     },
     "high_dates": {
-        "en": "Under Art. 113, high-risk obligations apply from 2 August 2026 (Annex III) and 2 August 2027 (Annex I products); check whether later amendments have shifted these dates.",
-        "el": "Σύμφωνα με το Άρθρο 113, οι υποχρεώσεις για τα συστήματα υψηλού κινδύνου ισχύουν από τις 2 Αυγούστου 2026 (Παράρτημα III) και τις 2 Αυγούστου 2027 (προϊόντα του Παραρτήματος I). Ελέγξτε αν μεταγενέστερες τροποποιήσεις έχουν αλλάξει αυτές τις ημερομηνίες.",
+        "en": "Under Art. 113, as amended by Regulation (EU) 2026/1744 (Digital Omnibus), high-risk obligations apply from 2 December 2027 (Annex III) and 2 August 2028 (Annex I products).",
+        "el": "Σύμφωνα με το Άρθρο 113, όπως τροποποιήθηκε από τον Κανονισμό (ΕΕ) 2026/1744 (Digital Omnibus), οι υποχρεώσεις για τα συστήματα υψηλού κινδύνου ισχύουν από τις 2 Δεκεμβρίου 2027 (Παράρτημα III) και τις 2 Αυγούστου 2028 (προϊόντα του Παραρτήματος I).",
+    },
+    "new_prohibition": {
+        "en": "This prohibition (Art. 5(1)(ba)-(bb)) was added by Regulation (EU) 2026/1744 and applies from 2 December 2026.",
+        "el": "Η απαγόρευση αυτή (Άρθρο 5(1)(ba)-(bb)) προστέθηκε με τον Κανονισμό (ΕΕ) 2026/1744 και ισχύει από τις 2 Δεκεμβρίου 2026.",
     },
     "non_eu": {
         "en": "You selected a jurisdiction outside the EU. The AI Act still applies if the system is placed on the EU market or its output is used in the EU (Art. 2).",
@@ -885,6 +908,8 @@ def assess_risk_tier(dilemma: str, sector: str = "", in_eu: bool = True, lang: s
                                     key=lambda cs: cs[1], default=(None, 0.0))
         if high_case and high_score >= TIER_THRESHOLDS["high"]:
             notes.append(NOTES["also_high"][lang].format(label=high_case["label"][lang], ref=high_case["ref"]))
+    if tier == "unacceptable" and any(m["id"] == "intimate_deepfakes" for m in matches):
+        notes.append(NOTES["new_prohibition"][lang])
     if borderline_with:
         notes.append(NOTES["borderline"][lang].format(tier=TIER_NAMES[borderline_with][lang]))
     if tier == "high":
